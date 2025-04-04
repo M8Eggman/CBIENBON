@@ -22325,8 +22325,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-a, button {
-  color: white !important;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat" !important;
 }
 
 .boutonTransition {
@@ -22337,12 +22339,16 @@ a, button {
   padding-block: 8px;
 }
 
+a, button {
+  color: white !important;
+}
+
 nav {
   background-color: rgba(0, 0, 0, 0.75) !important;
 }
 nav > div {
   min-height: 70px;
-  margin-inline: 3.94vw 3.94vw !important;
+  margin-inline: 4.25vw 4.25vw !important;
 }
 nav > div > a {
   font-size: 34px !important;
@@ -22353,10 +22359,6 @@ nav > div ul {
 }
 nav > div > .boutonTransition {
   display: none;
-}
-
-body {
-  font-family: "Montserrat" !important;
 }
 
 /*# sourceMappingURL=style.css.map */
