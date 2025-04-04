@@ -22344,7 +22344,7 @@ a, button {
 }
 
 nav {
-  background-color: rgba(0, 0, 0, 0.75) !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
   position: fixed !important;
   top: 0;
   width: 100%;
@@ -22364,12 +22364,19 @@ nav > div > .boutonTransition {
   display: none;
 }
 
+h1, p {
+  color: white;
+}
+
 header {
-  background-image: url(../assets/img/hero-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/hero-bg.jpg);
   background-size: cover;
   background-position-x: 50%;
   background-position-y: 30%;
   min-height: 984px;
+}
+header div:first-of-type h1 b {
+  color: #cda45d;
 }
 
 /*# sourceMappingURL=style.css.map */

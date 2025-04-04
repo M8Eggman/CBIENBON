@@ -1,6 +1,18 @@
+@use '_variables' as *
+@use '_mixins' as *
+@use '_fonts'
+
+h1, p
+    color: white
 header
-    background-image: url(../assets/img/hero-bg.jpg)
+    background-image: linear-gradient($noirTransparent, $noirTransparent), url(../assets/img/hero-bg.jpg)
     background-size: cover
     background-position-x: 50%
     background-position-y: 30%
     min-height: 984px
+    div:first-of-type
+        h1 b
+            color: $jauneRecurent
+        p
+        button
+    div:last-of-type button
