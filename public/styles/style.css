@@ -22345,6 +22345,7 @@ a, button {
 
 nav {
   background-color: rgba(0, 0, 0, 0.75) !important;
+  position: sticky;
 }
 nav > div {
   min-height: 70px;
@@ -22359,6 +22360,14 @@ nav > div ul {
 }
 nav > div > .boutonTransition {
   display: none;
+}
+
+header {
+  background-image: url(../assets/img/hero-bg.jpg);
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 30%;
+  min-height: 984px;
 }
 
 /*# sourceMappingURL=style.css.map */
