@@ -22345,7 +22345,9 @@ a, button {
 
 nav {
   background-color: rgba(0, 0, 0, 0.75) !important;
-  position: sticky;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
 }
 nav > div {
   min-height: 70px;
