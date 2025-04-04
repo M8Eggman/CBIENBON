@@ -22325,5 +22325,22 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+a, button {
+  color: white !important;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+nav > div {
+  min-height: 70px;
+}
+nav > div > .boutonTransition {
+  display: none;
+}
+
+body {
+  font-family: "Montserrat" !important;
+}
 
 /*# sourceMappingURL=style.css.map */
