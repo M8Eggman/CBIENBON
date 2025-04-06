@@ -2,8 +2,6 @@
 @use '_mixins' as *
 @use '_fonts'
 
-h1, p
-    color: white
 header
     background-image: linear-gradient($noirTransparent, $noirTransparent), url(../assets/img/hero-bg.jpg)
     background-size: cover
@@ -11,9 +9,11 @@ header
     background-position-y: 30%
     min-height: 984px
     padding-inline: 85px
+    h1, p
+        color: white
     > div:first-of-type
         margin-top: 130px
-        h1 
+        h1
             font-size: 55px
             font-weight: 800
             margin-bottom: 0px
@@ -24,7 +24,7 @@ header
             font-size: 25px
         div
             gap: 25px
-    > div:last-of-type 
+    > div:last-of-type
         border-radius: 50%
         background-color: $jauneRecurentTransparent
         width: 110px

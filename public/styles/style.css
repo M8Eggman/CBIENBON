@@ -22333,14 +22333,11 @@ body {
 
 .boutonTransition {
   background: none;
+  color: white;
   border: 3px solid #cda45d;
   border-radius: 50px;
   padding-inline: 30px;
   padding-block: 8px;
-}
-
-a, button {
-  color: white !important;
 }
 
 nav {
@@ -22354,6 +22351,7 @@ nav > div {
   margin-inline: 4.25vw 4.25vw !important;
 }
 nav > div > a {
+  color: white !important;
   font-size: 34px !important;
 }
 nav > div ul {
@@ -22364,10 +22362,6 @@ nav > div > .boutonTransition {
   display: none;
 }
 
-h1, p {
-  color: white;
-}
-
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/hero-bg.jpg);
   background-size: cover;
@@ -22375,6 +22369,9 @@ header {
   background-position-y: 30%;
   min-height: 984px;
   padding-inline: 85px;
+}
+header h1, header p {
+  color: white;
 }
 header > div:first-of-type {
   margin-top: 130px;
@@ -22415,6 +22412,21 @@ header > div:last-of-type div button {
 header > div:last-of-type div button i {
   color: white;
   font-size: 25px;
+}
+
+#sectionAbout {
+  background-image: url(../assets/img/about-bg.jpg);
+  background-size: cover;
+  background-position-y: 50%;
+  min-height: 760px;
+  color: white;
+}
+#sectionAbout div {
+  height: 700px;
+  width: 700px;
+}
+#sectionAbout div:last-of-type {
+  background-image: url(../assets/img/about.jpg);
 }
 
 /*# sourceMappingURL=style.css.map */
