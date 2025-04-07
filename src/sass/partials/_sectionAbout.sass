@@ -1,12 +1,57 @@
+@use '_variables' as *
+@use '_mixins' as *
+@use '_fonts'
+    
 #sectionAbout
-    background-image: url(../assets/img/about-bg.jpg)
+    padding-top: 96px
+    background-image: linear-gradient($noirMoinTransparent, $noirMoinTransparent), url(../assets/img/about-bg.jpg)
     background-size: cover
     background-position-y: 50%
     min-height: 760px
     color: white
+    justify-content: center
+    gap: 28px
     div
-        height: 700px
-        width: 700px
+        width: 762px
+        height: 570px
     div:first-of-type
+        h3
+            font-size: 32px
+        p,li
+            font-size: 20px
+        p:first-of-type
+            margin-bottom: 22px
+        ul
+            margin: 0
+            li:not(:last-of-type)
+                margin-bottom: 18px
+            span 
+                position: relative
+                left: 0px
+                bottom: 4px
+                width: auto
+                margin-right: 10px
+                i
+                    font-size: 14px
+                    padding: 3px 4px 3px 4px
+                    color: $jauneRecurent
+                    border: solid 2px $jauneRecurent
+                    border-radius: 50%
+        p:last-of-type
+            margin-top: 28px
     div:last-of-type
+        border: solid 5px rgba(128, 128, 128, 0.5)
         background-image: url(../assets/img/about.jpg)
+        background-size: cover
+        i
+            font-size: 50px
+            transform: rotateZ(-45deg)
+            color: $jauneRecurent
+        i:first-of-type
+            position: relative
+            bottom: 248px
+            left: 8px
+        i:last-of-type
+            position: relative
+            top: 248px
+            right: 8px

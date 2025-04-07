@@ -22350,8 +22350,10 @@ nav > div {
   min-height: 70px;
   margin-inline: 4.25vw 4.25vw !important;
 }
-nav > div > a {
+nav > div a {
   color: white !important;
+}
+nav > div > a {
   font-size: 34px !important;
 }
 nav > div ul {
@@ -22415,18 +22417,70 @@ header > div:last-of-type div button i {
 }
 
 #sectionAbout {
-  background-image: url(../assets/img/about-bg.jpg);
+  padding-top: 96px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../assets/img/about-bg.jpg);
   background-size: cover;
   background-position-y: 50%;
   min-height: 760px;
   color: white;
+  justify-content: center;
+  gap: 28px;
 }
 #sectionAbout div {
-  height: 700px;
-  width: 700px;
+  width: 762px;
+  height: 570px;
+}
+#sectionAbout div:first-of-type h3 {
+  font-size: 32px;
+}
+#sectionAbout div:first-of-type p, #sectionAbout div:first-of-type li {
+  font-size: 20px;
+}
+#sectionAbout div:first-of-type p:first-of-type {
+  margin-bottom: 22px;
+}
+#sectionAbout div:first-of-type ul {
+  margin: 0;
+}
+#sectionAbout div:first-of-type ul li:not(:last-of-type) {
+  margin-bottom: 18px;
+}
+#sectionAbout div:first-of-type ul span {
+  position: relative;
+  left: 0px;
+  bottom: 4px;
+  width: auto;
+  margin-right: 10px;
+}
+#sectionAbout div:first-of-type ul span i {
+  font-size: 14px;
+  padding: 3px 4px 3px 4px;
+  color: #cda45d;
+  border: solid 2px #cda45d;
+  border-radius: 50%;
+}
+#sectionAbout div:first-of-type p:last-of-type {
+  margin-top: 28px;
 }
 #sectionAbout div:last-of-type {
+  border: solid 5px rgba(128, 128, 128, 0.5);
   background-image: url(../assets/img/about.jpg);
+  background-size: cover;
+}
+#sectionAbout div:last-of-type i {
+  font-size: 50px;
+  transform: rotateZ(-45deg);
+  color: #cda45d;
+}
+#sectionAbout div:last-of-type i:first-of-type {
+  position: relative;
+  bottom: 248px;
+  left: 8px;
+}
+#sectionAbout div:last-of-type i:last-of-type {
+  position: relative;
+  top: 248px;
+  right: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */
