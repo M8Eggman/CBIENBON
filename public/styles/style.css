@@ -22732,4 +22732,21 @@ header > div:last-of-type div button i {
   top: 11px;
 }
 
+#sectionGallery {
+  background-color: #0d0b09;
+}
+#sectionGallery > div {
+  margin-top: 50px;
+}
+#sectionGallery > div div {
+  border: 2px solid rgba(128, 128, 128, 0.5);
+  width: 24.4vw;
+  height: 18.3vw;
+  overflow: hidden;
+}
+#sectionGallery > div div img {
+  width: 24.3vw;
+  height: 18.2vw;
+}
+
 /*# sourceMappingURL=style.css.map */
