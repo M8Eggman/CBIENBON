@@ -1,0 +1,67 @@
+@use '_variables' as *
+@use '_mixins' as *
+@use '_fonts'
+
+#sectionMenu
+    background-color: $fondBrun
+    padding-bottom: 70px
+    > div:first-of-type
+        margin-top: 57px
+        gap: 25px
+        input
+            display: none
+        label
+            font-size: 20px
+            color: white
+    > div:last-of-type
+        margin-top: 22px
+        column-gap: 30px
+        flex-wrap: wrap
+        margin-left: 85px
+        > div
+            margin-top: 58px
+            display: flex
+            width: 770px
+            img
+                width: 85px
+                height: 85px
+                border: solid 8px $contourGris
+                border-radius: 50px
+            > div
+                width: 685px
+                margin-left: 20px
+                p:first-of-type
+                    margin-bottom: 0px
+                    font-size: 18px
+                    font-weight: 600
+                    color: $jauneRecurent
+                    span
+                        color: white
+                    span::after
+                        content: ""
+                        display: inline-block
+                        position: relative
+                        bottom: 5px
+                        border: dotted 2px
+                        margin-inline: 5px
+                p:last-of-type
+                    font-size: 17px
+                    color: $grisTexte  
+        > div:nth-of-type(1) span::after
+            width: 70%
+        > div:nth-of-type(2) span::after
+            width: 73%
+        > div:nth-of-type(3) span::after
+            width: 77%
+        > div:nth-of-type(4) span::after
+            width: 66%
+        > div:nth-of-type(5) span::after
+            width: 71%
+        > div:nth-of-type(6) span::after
+            width: 68%
+        > div:nth-of-type(7) span::after
+            width: 74%
+        > div:nth-of-type(8) span::after
+            width: 71%
+        > div:nth-of-type(9) span::after
+            width: 73%

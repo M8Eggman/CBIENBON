@@ -22566,4 +22566,89 @@ header > div:last-of-type div button i {
   font-weight: 600;
 }
 
+#sectionMenu {
+  background-color: #1a1814;
+  padding-bottom: 70px;
+}
+#sectionMenu > div:first-of-type {
+  margin-top: 57px;
+  gap: 25px;
+}
+#sectionMenu > div:first-of-type input {
+  display: none;
+}
+#sectionMenu > div:first-of-type label {
+  font-size: 20px;
+  color: white;
+}
+#sectionMenu > div:last-of-type {
+  margin-top: 22px;
+  column-gap: 30px;
+  flex-wrap: wrap;
+  margin-left: 85px;
+}
+#sectionMenu > div:last-of-type > div {
+  margin-top: 58px;
+  display: flex;
+  width: 770px;
+}
+#sectionMenu > div:last-of-type > div img {
+  width: 85px;
+  height: 85px;
+  border: solid 8px rgba(128, 128, 128, 0.5);
+  border-radius: 50px;
+}
+#sectionMenu > div:last-of-type > div > div {
+  width: 685px;
+  margin-left: 20px;
+}
+#sectionMenu > div:last-of-type > div > div p:first-of-type {
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #cda45d;
+}
+#sectionMenu > div:last-of-type > div > div p:first-of-type span {
+  color: white;
+}
+#sectionMenu > div:last-of-type > div > div p:first-of-type span::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  bottom: 5px;
+  border: dotted 2px;
+  margin-inline: 5px;
+}
+#sectionMenu > div:last-of-type > div > div p:last-of-type {
+  font-size: 17px;
+  color: #8d8c8a;
+}
+#sectionMenu > div:last-of-type > div:nth-of-type(1) span::after {
+  width: 70%;
+}
+#sectionMenu > div:last-of-type > div:nth-of-type(2) span::after {
+  width: 73%;
+}
+#sectionMenu > div:last-of-type > div:nth-of-type(3) span::after {
+  width: 77%;
+}
+#sectionMenu > div:last-of-type > div:nth-of-type(4) span::after {
+  width: 66%;
+}
+#sectionMenu > div:last-of-type > div:nth-of-type(5) span::after {
+  width: 71%;
+}
+#sectionMenu > div:last-of-type > div:nth-of-type(6) span::after {
+  width: 68%;
+}
+#sectionMenu > div:last-of-type > div:nth-of-type(7) span::after {
+  width: 74%;
+}
+#sectionMenu > div:last-of-type > div:nth-of-type(8) span::after {
+  width: 71%;
+}
+#sectionMenu > div:last-of-type > div:nth-of-type(9) span::after {
+  width: 73%;
+}
+
 /*# sourceMappingURL=style.css.map */
