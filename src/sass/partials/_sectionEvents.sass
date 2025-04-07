@@ -3,3 +3,38 @@
 @use '_fonts'
 
 #sectionEvents
+    background-image: linear-gradient($noirMoinTransparent, $noirMoinTransparent), url(../assets/img/events-bg.jpg)
+    background-size: cover
+    background-position-y: 50%
+    min-height: 847px
+    #carouselExampleIndicators
+        padding-inline: 85px
+        .carousel-indicators
+            position: relative
+            top: 33vw
+            button
+                border-radius: 50%
+        .carousel-item
+            > div
+                img
+                    width: 763px
+                > div
+                    h3
+                        color: $jauneRecurent
+                        font-size: 30px
+                    ul
+                        list-style: none
+                        padding: 0px
+                        li
+                            margin-top: 22px
+                    p:first-of-type
+                        width: fit-content
+                        font-size: 30px
+                        font-weight: 600
+                        border-bottom: 3px $jauneRecurent solid
+                    p:last-of-type
+                       margin-top: 32px
+                    p:not(:first-of-type), li
+                        font-size: 19px
+                    p, li
+                        color: white

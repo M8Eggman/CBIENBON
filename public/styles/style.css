@@ -16558,8 +16558,8 @@ textarea.form-control-lg {
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   flex: 0 1 auto;
-  width: 10px;
-  height: 10px;
+  width: 13px;
+  height: 13px;
   padding: 0;
   margin-right: 3px;
   margin-left: 3px;
@@ -16570,7 +16570,7 @@ textarea.form-control-lg {
   border: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  opacity: 1;
+  opacity: 0.5;
   transition: opacity 0.6s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -22650,6 +22650,52 @@ header > div:last-of-type div button i {
 }
 #sectionMenu > div:last-of-type > div:nth-of-type(9) span::after {
   width: 73%;
+}
+
+#sectionEvents {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../assets/img/events-bg.jpg);
+  background-size: cover;
+  background-position-y: 50%;
+  min-height: 847px;
+}
+#sectionEvents #carouselExampleIndicators {
+  padding-inline: 85px;
+}
+#sectionEvents #carouselExampleIndicators .carousel-indicators {
+  position: relative;
+  top: 33vw;
+}
+#sectionEvents #carouselExampleIndicators .carousel-indicators button {
+  border-radius: 50%;
+}
+#sectionEvents #carouselExampleIndicators .carousel-item > div img {
+  width: 763px;
+}
+#sectionEvents #carouselExampleIndicators .carousel-item > div > div h3 {
+  color: #cda45d;
+  font-size: 30px;
+}
+#sectionEvents #carouselExampleIndicators .carousel-item > div > div ul {
+  list-style: none;
+  padding: 0px;
+}
+#sectionEvents #carouselExampleIndicators .carousel-item > div > div ul li {
+  margin-top: 22px;
+}
+#sectionEvents #carouselExampleIndicators .carousel-item > div > div p:first-of-type {
+  width: fit-content;
+  font-size: 30px;
+  font-weight: 600;
+  border-bottom: 3px #cda45d solid;
+}
+#sectionEvents #carouselExampleIndicators .carousel-item > div > div p:last-of-type {
+  margin-top: 32px;
+}
+#sectionEvents #carouselExampleIndicators .carousel-item > div > div p:not(:first-of-type), #sectionEvents #carouselExampleIndicators .carousel-item > div > div li {
+  font-size: 19px;
+}
+#sectionEvents #carouselExampleIndicators .carousel-item > div > div p, #sectionEvents #carouselExampleIndicators .carousel-item > div > div li {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
