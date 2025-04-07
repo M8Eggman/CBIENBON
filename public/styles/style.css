@@ -22350,7 +22350,7 @@ body {
 }
 
 .pAvantH2, h2 {
-  margin-left: 85px;
+  margin-inline: 85px;
 }
 
 .pAvantH2 {
@@ -22698,6 +22698,37 @@ header > div:last-of-type div button i {
 }
 #sectionEvents #carouselExampleIndicators .carousel-indicators button {
   border-radius: 50%;
+}
+
+#sectionReservation {
+  background-color: #0d0b09;
+}
+#sectionReservation form {
+  margin-top: 52px;
+  margin-inline: 85px;
+  gap: 30px;
+}
+#sectionReservation form input {
+  width: 497px;
+  height: 52px;
+}
+#sectionReservation form textarea {
+  width: 1552px;
+  height: 150px;
+  resize: none;
+  overflow: hidden;
+}
+#sectionReservation form input, #sectionReservation form textarea {
+  border: #cda45d 1px solid;
+  background-color: #0d0b09;
+}
+#sectionReservation form input::placeholder, #sectionReservation form textarea::placeholder {
+  position: relative;
+  left: 12px;
+  color: #a39b89;
+}
+#sectionReservation form textarea::placeholder {
+  top: 11px;
 }
 
 /*# sourceMappingURL=style.css.map */

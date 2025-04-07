@@ -3,3 +3,26 @@
 @use '_fonts'
 
 #sectionReservation
+    background-color: $fondPresqueNoir
+    form
+        margin-top: 52px
+        margin-inline: 85px
+        gap: 30px
+        input
+            width: 497px
+            height: 52px
+        textarea
+            width: 1552px
+            height: 150px
+            resize: none
+            overflow: hidden
+        input, textarea
+            border: $jauneRecurent 1px solid
+            background-color: $fondPresqueNoir
+        input::placeholder, textarea::placeholder
+            position: relative
+            left: 12px
+            color: $textePlaceHolder
+        textarea::placeholder
+            top: 11px
+        
