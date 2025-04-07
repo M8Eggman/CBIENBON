@@ -22734,6 +22734,7 @@ header > div:last-of-type div button i {
 
 #sectionGallery {
   background-color: #0d0b09;
+  min-height: 910px;
 }
 #sectionGallery > div {
   margin-top: 50px;
@@ -22747,6 +22748,32 @@ header > div:last-of-type div button i {
 #sectionGallery > div div img {
   width: 24.3vw;
   height: 18.2vw;
+}
+
+#sectionChefs {
+  background-color: #0d0b09;
+}
+#sectionChefs > div {
+  margin-top: 52px;
+  gap: 30px;
+}
+#sectionChefs > div > div:first-of-type {
+  width: 28.5vw;
+  height: 28.5vw;
+  background-image: url(../assets/img/chefs/chefs-1.jpg);
+  background-size: cover;
+}
+#sectionChefs > div > div:nth-of-type(2) {
+  width: 28.5vw;
+  height: 28.5vw;
+  background-image: url(../assets/img/chefs/chefs-2.jpg);
+  background-size: cover;
+}
+#sectionChefs > div > div:last-of-type {
+  width: 28.5vw;
+  height: 28.5vw;
+  background-image: url(../assets/img/chefs/chefs-3.jpg);
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
