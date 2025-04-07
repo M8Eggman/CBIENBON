@@ -2,10 +2,17 @@
 @use './partials/_mixins' as *
 @use './partials/_fonts'
 @use './partials/_icons'
-@use '../../node_modules/bootstrap/scss/bootstrap.scss'
+@use '../../node_modules/bootstrap/scss/bootstrap.scss' with(
+    $carousel-indicator-width: 10px,
+    $carousel-indicator-height: 10px,
+    $carousel-indicator-opacity: 1,
+    
+    $carousel-indicator-active-bg: $jauneRecurent
+)
 @use './partials/_base'
 @use './partials/_nav'
 @use './partials/_header'
 @use './partials/_sectionAbout'
 @use './partials/_sectionWhyUs'
 @use './partials/_sectionMenu'
+@use './partials/_sectionEvents'
