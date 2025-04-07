@@ -22659,14 +22659,8 @@ header > div:last-of-type div button i {
   min-height: 847px;
 }
 #sectionEvents #carouselExampleIndicators {
+  margin-top: 52px;
   padding-inline: 85px;
-}
-#sectionEvents #carouselExampleIndicators .carousel-indicators {
-  position: relative;
-  top: 33vw;
-}
-#sectionEvents #carouselExampleIndicators .carousel-indicators button {
-  border-radius: 50%;
 }
 #sectionEvents #carouselExampleIndicators .carousel-item > div img {
   width: 763px;
@@ -22674,6 +22668,7 @@ header > div:last-of-type div button i {
 #sectionEvents #carouselExampleIndicators .carousel-item > div > div h3 {
   color: #cda45d;
   font-size: 30px;
+  margin-bottom: 12px;
 }
 #sectionEvents #carouselExampleIndicators .carousel-item > div > div ul {
   list-style: none;
@@ -22696,6 +22691,13 @@ header > div:last-of-type div button i {
 }
 #sectionEvents #carouselExampleIndicators .carousel-item > div > div p, #sectionEvents #carouselExampleIndicators .carousel-item > div > div li {
   color: white;
+}
+#sectionEvents #carouselExampleIndicators .carousel-indicators {
+  top: 22px;
+  position: relative;
+}
+#sectionEvents #carouselExampleIndicators .carousel-indicators button {
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
