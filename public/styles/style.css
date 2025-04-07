@@ -22702,6 +22702,7 @@ header > div:last-of-type div button i {
 
 #sectionReservation {
   background-color: #0d0b09;
+  min-height: 670px;
 }
 #sectionReservation form {
   margin-top: 52px;
