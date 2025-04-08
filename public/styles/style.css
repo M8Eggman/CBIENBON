@@ -22325,90 +22325,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-@keyframes boutonHeader {
-  0% {
-    transform: scale(100%);
-    opacity: 100%;
-  }
-  25% {
-    transform: scale(250%);
-    opacity: 75%;
-  }
-  50% {
-    transform: scale(500%);
-    opacity: 50%;
-  }
-  75% {
-    transform: scale(750%);
-    opacity: 25%;
-  }
-  100% {
-    transform: scale(1000%);
-    opacity: 0%;
-  }
-}
-@keyframes imageSectionAbout;
-.boutonTransition:hover {
-  background-color: #cda45d;
-  transition: 250ms ease;
-}
-
-/* L'input est checked quand on click sur le label car ils sont lier.
- * Une fois que le input est checked cela va lancer une serie de 
- * modification comme: le iframe qui devient visible, le label qui change 
- * de position pour pouvoir fermer la video, ... */
-header > div:last-of-type > div > input:checked ~ label {
-  position: fixed;
-  top: 50px;
-  right: 50px;
-  display: block;
-  z-index: 1001;
-  background: none;
-}
-header > div:last-of-type > div > input:checked ~ div {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: block;
-  background-color: rgba(0, 0, 0, 0.75);
-  width: 99vw;
-  height: 99vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-}
-header > div:last-of-type > div > input:checked ~ div iframe {
-  width: 60vw;
-  height: 33.75vw;
-  display: block;
-}
-header > div:last-of-type:hover:not(:checked) {
-  overflow: hidden;
-  background-color: #cda45d;
-  transition: 333ms ease-in;
-}
-header > div:last-of-type:hover:not(:checked) > div label i {
-  animation: boutonHeader 333ms ease-in;
-}
-
-#sectionAbout div:last-of-type:hover {
-  transform: scale(105%);
-  transition: 500ms ease;
-}
-#sectionAbout div:last-of-type:hover i:first-of-type {
-  position: relative;
-  bottom: 46%;
-  left: 0;
-  transition: 500ms ease;
-}
-#sectionAbout div:last-of-type:hover i:last-of-type {
-  position: relative;
-  top: 46%;
-  right: 0;
-  transition: 500ms ease;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -23043,6 +22959,100 @@ footer #footerCopyright button a {
 footer #footerCopyright button a i {
   font-size: 20px;
   color: #cda45d;
+}
+
+@keyframes boutonHeader {
+  0% {
+    transform: scale(100%);
+    opacity: 100%;
+  }
+  25% {
+    transform: scale(250%);
+    opacity: 75%;
+  }
+  50% {
+    transform: scale(500%);
+    opacity: 50%;
+  }
+  75% {
+    transform: scale(750%);
+    opacity: 25%;
+  }
+  100% {
+    transform: scale(1000%);
+    opacity: 0%;
+  }
+}
+@keyframes imageSectionAbout;
+.boutonTransition:hover {
+  background-color: #cda45d;
+  transition: 250ms ease;
+}
+
+/* L'input est checked quand on click sur le label car ils sont lier.
+ * Une fois que le input est checked cela va lancer une serie de 
+ * modification comme: le iframe qui devient visible, le label qui change 
+ * de position pour pouvoir fermer la video, ... */
+header > div:last-of-type > div > input:checked ~ label {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  display: block;
+  z-index: 1001;
+  background: none;
+}
+header > div:last-of-type > div > input:checked ~ div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 99vw;
+  height: 99vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+header > div:last-of-type > div > input:checked ~ div iframe {
+  width: 60vw;
+  height: 33.75vw;
+  display: block;
+}
+header > div:last-of-type:hover:not(:checked) {
+  overflow: hidden;
+  background-color: #cda45d;
+  transition: 333ms ease-in;
+}
+header > div:last-of-type:hover:not(:checked) > div label i {
+  animation: boutonHeader 333ms ease-in;
+}
+
+#sectionAbout div:last-of-type:hover {
+  transform: scale(105%);
+  transition: 500ms ease;
+}
+#sectionAbout div:last-of-type:hover i:first-of-type {
+  position: relative;
+  bottom: 46%;
+  left: 0;
+  transition: 500ms ease;
+}
+#sectionAbout div:last-of-type:hover i:last-of-type {
+  position: relative;
+  top: 46%;
+  right: 0;
+  transition: 500ms ease;
+}
+
+#sectionWhyUs > div div:hover {
+  background-color: #cda45d;
+  transition: 250ms ease;
+}
+#sectionWhyUs > div div:hover p, #sectionWhyUs > div div:hover h4 {
+  color: white;
+  transform: translateY(-20px);
+  transition: 250ms ease;
 }
 
 /*# sourceMappingURL=style.css.map */
