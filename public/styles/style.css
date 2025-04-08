@@ -22432,6 +22432,7 @@ header {
   background-position-y: 30%;
   min-height: 984px;
   padding-inline: 85px;
+  justify-content: space-between;
 }
 header h1, header p {
   color: white;
@@ -22617,7 +22618,7 @@ header > div:last-of-type > div input {
   margin-right: 30vw;
 }
 #sectionMenu > div:first-of-type > div {
-  margin-top: 58px;
+  margin-top: 50px;
   display: flex;
   width: 45vw;
 }
@@ -23184,7 +23185,141 @@ footer li a:hover {
   transition: 200ms ease;
 }
 
+@media screen and (576px <= width < 768px) {
+  .pAvantH2, h2 {
+    margin-inline: 5vw;
+  }
+  header {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    min-height: auto;
+    padding-bottom: 200px;
+  }
+  header div {
+    text-align: center;
+    justify-content: center;
+  }
+  header > div:last-of-type {
+    margin-top: 50px;
+    margin-right: 0px;
+  }
+  header iframe {
+    width: 80vw;
+    height: 45vw;
+  }
+  #sectionAbout {
+    flex-wrap: wrap-reverse;
+  }
+  #sectionAbout div {
+    width: 90vw;
+  }
+  #sectionAbout div:last-of-type {
+    height: 70vw;
+  }
+  #sectionWhyUs {
+    padding-bottom: 10px;
+  }
+  #sectionWhyUs > div {
+    flex-wrap: wrap;
+  }
+  #sectionWhyUs > div div {
+    width: 90vw;
+  }
+  #sectionMenu > div:first-of-type > div {
+    width: 90vw;
+  }
+  #sectionMenu > div:first-of-type label:first-of-type {
+    margin-left: 25vw;
+  }
+  #sectionMenu > div:first-of-type label:last-of-type {
+    margin-right: 25vw;
+  }
+  #sectionEvents {
+    padding-bottom: 10px;
+  }
+  #sectionEvents #carouselExampleIndicators {
+    padding-inline: 0px;
+  }
+  #sectionEvents #carouselExampleIndicators .carousel-item > div {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #sectionEvents #carouselExampleIndicators .carousel-item > div img {
+    width: 90vw;
+    height: 75vw;
+  }
+  #sectionEvents #carouselExampleIndicators .carousel-item > div > div {
+    width: 90vw;
+  }
+  #sectionReservation {
+    background-color: #0d0b09;
+    min-height: 670px;
+  }
+  #sectionReservation form {
+    margin-top: 52px;
+    gap: 1.5vw;
+  }
+  #sectionReservation form input {
+    width: 44.25vw;
+    height: 52px;
+  }
+  #sectionReservation form textarea {
+    width: 90vw;
+    height: 150px;
+  }
+  #sectionGallery > div div {
+    width: 30vw;
+    height: 24vw;
+    overflow: hidden;
+  }
+  #sectionGallery > div div img {
+    width: 30vw;
+    height: 24vw;
+  }
+  #sectionChefs > div {
+    gap: 1.5vw;
+  }
+  #sectionChefs > div > div {
+    width: 44.25vw;
+    height: 44.25vw;
+  }
+  #sectionContact > div > div > div {
+    width: 45vw;
+    height: auto;
+  }
+  #sectionContact > div form {
+    gap: 1.5vw;
+  }
+  #sectionContact > div form div:not(:nth-of-type(3)) input {
+    width: 25vw;
+    height: 52px;
+  }
+  #sectionContact > div form div:nth-of-type(3) input {
+    width: 51.5vw;
+    height: 52px;
+  }
+  #sectionContact > div form textarea {
+    width: 51.5vw;
+    height: 228px;
+  }
+  footer #footerInformation {
+    flex-wrap: wrap;
+  }
+  footer #footerInformation div {
+    width: 40vw;
+  }
+}
 @media screen and (768px <= width < 992px) {
+  header {
+    gap: 10px;
+  }
+  header > div:last-of-type {
+    margin-right: 10px;
+  }
+  header iframe {
+    width: 80vw;
+    height: 45vw;
+  }
   #sectionWhyUs, #sectionEvents {
     padding-bottom: 10px;
   }
@@ -23213,31 +23348,8 @@ footer li a:hover {
     width: 51.5vw;
     height: 228px;
   }
-  header {
-    gap: 10px;
-  }
-  header > div:last-of-type {
-    margin-right: 10px;
-  }
-  header iframe {
-    width: 80vw;
-    height: 45vw;
-  }
   footer #footerNewsletter {
     width: 25vw;
-  }
-  footer #footerNewsletter form input {
-    height: 50px;
-    border: 1px solid #cda45d;
-    background: #27251f;
-    width: 20vw;
-    border-radius: 50px;
-  }
-  footer #footerNewsletter form button {
-    padding-inline: 2px;
-  }
-  footer #footerNewsletter form label {
-    display: none;
   }
 }
 

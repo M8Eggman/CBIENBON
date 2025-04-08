@@ -2,13 +2,111 @@
 @use '_mixins' as *
 @use '_fonts'
 // ecran mobile
-@media screen and (0px <= width < 576px)
+@media screen and (width < 576px)
 
-// ecran tablett
+// ecran tablette
 @media screen and (576px <= width < 768px)
-
+    .pAvantH2,h2
+        margin-inline: 5vw
+    header
+        flex-wrap: wrap
+        justify-content: center !important
+        min-height: auto
+        padding-bottom: 200px
+        div
+            text-align: center
+            justify-content: center
+        > div:last-of-type
+            margin-top: 50px
+            margin-right: 0px
+        iframe
+            width: 80vw
+            height: 45vw
+    #sectionAbout
+        flex-wrap: wrap-reverse
+        div
+            width: 90vw
+        div:last-of-type
+            height: 70vw
+    #sectionWhyUs 
+        padding-bottom: 10px
+        > div
+            flex-wrap: wrap
+            div
+                width: 90vw
+    #sectionMenu > div:first-of-type
+        > div
+            width: 90vw
+        label:first-of-type
+            margin-left: 25vw
+        label:last-of-type
+            margin-right: 25vw
+    #sectionEvents
+        padding-bottom: 10px
+        #carouselExampleIndicators
+            padding-inline: 0px
+            .carousel-item
+                > div
+                    justify-content: center
+                    flex-wrap: wrap
+                    img
+                        width: 90vw
+                        height: 75vw
+                    >div
+                        width: 90vw
+    #sectionReservation
+        background-color: $fondPresqueNoir
+        min-height: 670px
+        form
+            margin-top: 52px
+            gap: 1.5vw
+            input
+                width: 44.25vw
+                height: 52px
+            textarea
+                width: 90vw
+                height: 150px
+    #sectionGallery > div
+        div
+            width: 30vw
+            height: 24vw
+            overflow: hidden
+            img
+                width: 30vw
+                height: 24vw
+    #sectionChefs > div
+        gap: 1.5vw
+        > div
+            width: 44.25vw
+            height: 44.25vw
+    #sectionContact > div 
+        > div > div
+            width: 45vw
+            height: auto
+        form
+            gap: 1.5vw
+            div:not(:nth-of-type(3)) input
+                width: 25vw
+                height: 52px
+            div:nth-of-type(3) input
+                width: 51.5vw
+                height: 52px
+            textarea
+                width: 51.5vw
+                height: 228px
+    footer #footerInformation
+        flex-wrap: wrap
+        div
+            width: 40vw
 // ecran laptop
 @media screen and (768px <= width < 992px)
+    header 
+        gap: 10px
+        > div:last-of-type
+            margin-right: 10px
+        iframe
+            width: 80vw
+            height: 45vw
     #sectionWhyUs, #sectionEvents
         padding-bottom: 10px
     #sectionMenu > div:first-of-type
@@ -31,23 +129,5 @@
             textarea
                 width: 51.5vw
                 height: 228px
-    header 
-        gap: 10px
-        > div:last-of-type
-            margin-right: 10px
-        iframe
-            width: 80vw
-            height: 45vw
     footer #footerNewsletter 
         width: 25vw
-        form
-            input
-                height: 50px
-                border: 1px solid $jauneRecurent
-                background: $JSP
-                width: 20vw
-                border-radius: 50px
-            button
-                padding-inline: 2px
-            label 
-                display: none
