@@ -22,12 +22,22 @@
     0%
         opacity: 0
         transform: translateX(100px)
+@keyframes chefs
+    0%
+        opacity: 0
+        transform: translateY(100px)
+    100%
+        opacity: 1
 
 .boutonTransition:hover
     background-color: $jauneRecurent
     transition: 250ms ease
+.boutonTransition
+    transition: 250ms ease
 .boutonSansTransition:hover
     filter: brightness(110%)
+    transition: 250ms ease
+.boutonSansTransition
     transition: 250ms ease
 /* 
  L'input est checked quand on click sur le label car ils sont lier.
@@ -78,6 +88,12 @@ header
         top: 46%
         right: 0
         transition: 500ms ease
+#sectionAbout div:last-of-type
+    transition: 500ms ease
+    i:first-of-type
+        transition: 500ms ease
+    i:last-of-type
+        transition: 500ms ease
 #sectionWhyUs
     > div div:hover
             background-color: $jauneRecurent
@@ -85,6 +101,11 @@ header
             p,h4
                 color: white 
                 transform: translateY(-20px)
+                transition: 250ms ease
+#sectionWhyUs
+    > div div
+            transition: 250ms ease
+            p,h4
                 transition: 250ms ease
 #sectionMenu
     transition: 200ms ease
@@ -109,5 +130,14 @@ header
     transform: scale(110%)
     transition: 200ms ease
 #sectionGallery > div div img
-    transform: scale(100%)
+    transition: 200ms ease
+#sectionChefs > div > div:hover 
+    > div
+        display: flex !important
+        p, i
+            animation: chefs 200ms
+footer li a:hover
+    color: $jauneRecurent !important
+    transition: 200ms ease
+footer li a
     transition: 200ms ease

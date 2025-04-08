@@ -22780,23 +22780,33 @@ header > div:last-of-type > div input {
   margin-top: 52px;
   gap: 30px;
 }
-#sectionChefs > div > div:first-of-type {
+#sectionChefs > div > div {
   width: 28.5vw;
   height: 28.5vw;
-  background-image: url(../assets/img/chefs/chefs-1.jpg);
   background-size: cover;
+}
+#sectionChefs > div > div > div {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1));
+  overflow: hidden;
+}
+#sectionChefs > div > div > div p, #sectionChefs > div > div > div i {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 22px;
+}
+#sectionChefs > div > div:first-of-type {
+  background-image: url(../assets/img/chefs/chefs-1.jpg);
 }
 #sectionChefs > div > div:nth-of-type(2) {
-  width: 28.5vw;
-  height: 28.5vw;
   background-image: url(../assets/img/chefs/chefs-2.jpg);
-  background-size: cover;
 }
 #sectionChefs > div > div:last-of-type {
-  width: 28.5vw;
-  height: 28.5vw;
   background-image: url(../assets/img/chefs/chefs-3.jpg);
-  background-size: cover;
 }
 
 #sectionContact {
@@ -22992,13 +23002,30 @@ footer #footerCopyright button a i {
     transform: translateX(100px);
   }
 }
+@keyframes chefs {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .boutonTransition:hover {
   background-color: #cda45d;
   transition: 250ms ease;
 }
 
+.boutonTransition {
+  transition: 250ms ease;
+}
+
 .boutonSansTransition:hover {
   filter: brightness(110%);
+  transition: 250ms ease;
+}
+
+.boutonSansTransition {
   transition: 250ms ease;
 }
 
@@ -23058,6 +23085,16 @@ header > div:last-of-type:hover:not(:checked) > div label i {
   transition: 500ms ease;
 }
 
+#sectionAbout div:last-of-type {
+  transition: 500ms ease;
+}
+#sectionAbout div:last-of-type i:first-of-type {
+  transition: 500ms ease;
+}
+#sectionAbout div:last-of-type i:last-of-type {
+  transition: 500ms ease;
+}
+
 #sectionWhyUs > div div:hover {
   background-color: #cda45d;
   transition: 250ms ease;
@@ -23065,6 +23102,13 @@ header > div:last-of-type:hover:not(:checked) > div label i {
 #sectionWhyUs > div div:hover p, #sectionWhyUs > div div:hover h4 {
   color: white;
   transform: translateY(-20px);
+  transition: 250ms ease;
+}
+
+#sectionWhyUs > div div {
+  transition: 250ms ease;
+}
+#sectionWhyUs > div div p, #sectionWhyUs > div div h4 {
   transition: 250ms ease;
 }
 
@@ -23103,7 +23147,22 @@ header > div:last-of-type:hover:not(:checked) > div label i {
 }
 
 #sectionGallery > div div img {
-  transform: scale(100%);
+  transition: 200ms ease;
+}
+
+#sectionChefs > div > div:hover > div {
+  display: flex !important;
+}
+#sectionChefs > div > div:hover > div p, #sectionChefs > div > div:hover > div i {
+  animation: chefs 200ms;
+}
+
+footer li a:hover {
+  color: #cda45d !important;
+  transition: 200ms ease;
+}
+
+footer li a {
   transition: 200ms ease;
 }
 
