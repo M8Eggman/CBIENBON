@@ -23089,7 +23089,6 @@ header > div:last-of-type:hover:not(:checked) > div label i {
   right: 0;
   transition: 500ms ease;
 }
-
 #sectionAbout div:last-of-type {
   transition: 500ms ease;
 }
@@ -23109,7 +23108,6 @@ header > div:last-of-type:hover:not(:checked) > div label i {
   transform: translateY(-20px);
   transition: 250ms ease;
 }
-
 #sectionWhyUs > div div {
   transition: 250ms ease;
 }
@@ -23150,7 +23148,6 @@ header > div:last-of-type:hover:not(:checked) > div label i {
   transform: scale(110%);
   transition: 200ms ease;
 }
-
 #sectionGallery > div div img {
   transition: 200ms ease;
 }
@@ -23162,12 +23159,19 @@ header > div:last-of-type:hover:not(:checked) > div label i {
   animation: chefs 200ms;
 }
 
-footer li a:hover {
-  color: #cda45d !important;
+footer #footerCopyright:hover button {
+  background-color: #cda45d;
   transition: 200ms ease;
 }
-
+footer #footerCopyright:hover button i {
+  color: white;
+  transition: 200ms ease;
+}
 footer li a {
+  transition: 200ms ease;
+}
+footer li a:hover {
+  color: #cda45d !important;
   transition: 200ms ease;
 }
 

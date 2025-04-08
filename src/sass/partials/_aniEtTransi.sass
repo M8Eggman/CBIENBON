@@ -75,25 +75,26 @@ header
         transition: 333ms ease-in
         > div label i
             animation: boutonHeader 333ms ease-in
-#sectionAbout div:last-of-type:hover
-    transform: scale(105%)
-    transition: 500ms ease
-    i:first-of-type
-        position: relative
-        bottom: 46%
-        left: 0
+#sectionAbout 
+    div:last-of-type:hover
+        transform: scale(105%)
         transition: 500ms ease
-    i:last-of-type
-        position: relative
-        top: 46%
-        right: 0
+        i:first-of-type
+            position: relative
+            bottom: 46%
+            left: 0
+            transition: 500ms ease
+        i:last-of-type
+            position: relative
+            top: 46%
+            right: 0
+            transition: 500ms ease
+    div:last-of-type
         transition: 500ms ease
-#sectionAbout div:last-of-type
-    transition: 500ms ease
-    i:first-of-type
-        transition: 500ms ease
-    i:last-of-type
-        transition: 500ms ease
+        i:first-of-type
+            transition: 500ms ease
+        i:last-of-type
+            transition: 500ms ease
 #sectionWhyUs
     > div div:hover
             background-color: $jauneRecurent
@@ -102,7 +103,6 @@ header
                 color: white 
                 transform: translateY(-20px)
                 transition: 250ms ease
-#sectionWhyUs
     > div div
             transition: 250ms ease
             p,h4
@@ -126,18 +126,26 @@ header
         display: none
     #Speciality:checked ~ .speciality
         animation: menuAnimation 200ms
-#sectionGallery > div div:hover img
-    transform: scale(110%)
-    transition: 200ms ease
-#sectionGallery > div div img
-    transition: 200ms ease
-#sectionChefs > div > div:hover 
-    > div
+#sectionGallery 
+    > div div:hover img
+        transform: scale(110%)
+        transition: 200ms ease
+    > div div img
+        transition: 200ms ease
+#sectionChefs 
+    > div > div:hover > div
         display: flex !important
         p, i
             animation: chefs 200ms
-footer li a:hover
-    color: $jauneRecurent !important
-    transition: 200ms ease
-footer li a
-    transition: 200ms ease
+footer 
+    #footerCopyright:hover button
+            background-color: $jauneRecurent
+            transition: 200ms ease
+            i
+                color: white
+                transition: 200ms ease
+    li a
+        transition: 200ms ease
+    li a:hover
+        color: $jauneRecurent !important
+        transition: 200ms ease
