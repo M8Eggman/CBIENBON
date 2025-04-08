@@ -22797,7 +22797,12 @@ header > div:last-of-type > div input {
 #sectionChefs > div > div > div p, #sectionChefs > div > div > div i {
   margin-bottom: 20px;
   color: white;
+}
+#sectionChefs > div > div > div p:not(:last-of-type), #sectionChefs > div > div > div i {
   font-size: 22px;
+}
+#sectionChefs > div > div > div p:last-of-type {
+  font-size: 18px;
 }
 #sectionChefs > div > div:first-of-type {
   background-image: url(../assets/img/chefs/chefs-1.jpg);
