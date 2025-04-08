@@ -22325,6 +22325,68 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@keyframes boutonHeader {
+  0% {
+    transform: scale(100%);
+    opacity: 100%;
+  }
+  25% {
+    transform: scale(250%);
+    opacity: 75%;
+  }
+  50% {
+    transform: scale(500%);
+    opacity: 50%;
+  }
+  75% {
+    transform: scale(750%);
+    opacity: 25%;
+  }
+  100% {
+    transform: scale(1000%);
+    opacity: 0%;
+  }
+}
+.boutonTransition:hover {
+  background-color: #cda45d;
+  transition: 250ms ease;
+}
+
+header > div:last-of-type > div > input:checked ~ label {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  display: block;
+  z-index: 1001;
+  background: none;
+}
+header > div:last-of-type > div > input:checked ~ div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 99vw;
+  height: 99vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+header > div:last-of-type > div > input:checked ~ div iframe {
+  width: 60vw;
+  height: 33.75vw;
+  display: block;
+}
+header > div:last-of-type:hover:not(:checked) {
+  overflow: hidden;
+  background-color: #cda45d;
+  transition: 333ms ease-in;
+}
+header > div:last-of-type:hover:not(:checked) > div label i {
+  animation: boutonHeader 333ms ease-in;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -22458,19 +22520,28 @@ header > div:last-of-type {
   margin-top: 130px;
   margin-right: 195px;
 }
-header > div:last-of-type div {
+header > div:last-of-type > div {
   border-radius: 50%;
 }
-header > div:last-of-type div button {
+header > div:last-of-type > div div {
+  display: none;
+}
+header > div:last-of-type > div div iframe {
+  display: none;
+}
+header > div:last-of-type > div label {
   background-color: #cda45d;
   width: 80px;
   height: 80px;
   border: none;
   border-radius: 50%;
 }
-header > div:last-of-type div button i {
+header > div:last-of-type > div label i {
   color: white;
   font-size: 25px;
+}
+header > div:last-of-type > div input {
+  display: none;
 }
 
 #sectionAbout {
