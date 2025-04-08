@@ -22347,6 +22347,7 @@ textarea.form-control-lg {
     opacity: 0%;
   }
 }
+@keyframes imageSectionAbout;
 .boutonTransition:hover {
   background-color: #cda45d;
   transition: 250ms ease;
@@ -22389,6 +22390,23 @@ header > div:last-of-type:hover:not(:checked) {
 }
 header > div:last-of-type:hover:not(:checked) > div label i {
   animation: boutonHeader 333ms ease-in;
+}
+
+#sectionAbout div:last-of-type:hover {
+  transform: scale(105%);
+  transition: 500ms ease;
+}
+#sectionAbout div:last-of-type:hover i:first-of-type {
+  position: relative;
+  bottom: 46%;
+  left: 0;
+  transition: 500ms ease;
+}
+#sectionAbout div:last-of-type:hover i:last-of-type {
+  position: relative;
+  top: 46%;
+  right: 0;
+  transition: 500ms ease;
 }
 
 body {
@@ -22606,13 +22624,13 @@ header > div:last-of-type > div input {
 }
 #sectionAbout div:last-of-type i:first-of-type {
   position: relative;
-  bottom: 248px;
-  left: 8px;
+  bottom: 44%;
+  left: 1.5%;
 }
 #sectionAbout div:last-of-type i:last-of-type {
   position: relative;
-  top: 248px;
-  right: 8px;
+  top: 44%;
+  right: 1.5%;
 }
 
 #sectionWhyUs {

@@ -18,7 +18,7 @@
     100%
         transform: scale(1000%)
         opacity: 0%
-
+@keyframes imageSectionAbout
 .boutonTransition:hover
     background-color: $jauneRecurent
     transition: 250ms ease
@@ -58,3 +58,16 @@ header
         transition: 333ms ease-in
         > div label i
             animation: boutonHeader 333ms ease-in
+#sectionAbout div:last-of-type:hover
+    transform: scale(105%)
+    transition: 500ms ease
+    i:first-of-type
+        position: relative
+        bottom: 46%
+        left: 0
+        transition: 500ms ease
+    i:last-of-type
+        position: relative
+        top: 46%
+        right: 0
+        transition: 500ms ease
