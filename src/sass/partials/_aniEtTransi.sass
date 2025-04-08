@@ -18,7 +18,10 @@
     100%
         transform: scale(1000%)
         opacity: 0%
-@keyframes imageSectionAbout
+@keyframes menuAnimation
+    0%
+        opacity: 0
+        transform: translateX(100px)
 .boutonTransition:hover
     background-color: $jauneRecurent
     transition: 250ms ease
@@ -79,3 +82,22 @@ header
                 color: white 
                 transform: translateY(-20px)
                 transition: 250ms ease
+#sectionMenu
+    transition: 200ms ease
+    input:hover + label
+        color: $jauneRecurent 
+        transition: 200ms ease
+    input:checked + label
+        color: $jauneRecurent
+    #Starters:checked ~ .salads, #Starters:checked ~ .speciality
+        display: none
+    #Starters:checked ~ .starters
+        animation: menuAnimation 200ms
+    #Salads:checked ~ .starters, #Salads:checked ~ .speciality
+        display: none
+    #Salads:checked ~ .salads
+        animation: menuAnimation 200ms
+    #Speciality:checked ~ .salads, #Speciality:checked ~ .starters
+        display: none
+    #Speciality:checked ~ .speciality
+        animation: menuAnimation 200ms
