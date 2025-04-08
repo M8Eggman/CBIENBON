@@ -22325,6 +22325,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+input, textarea {
+  color: white;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -22493,8 +22497,10 @@ header > div:last-of-type > div input {
   gap: 28px;
 }
 #sectionAbout div {
-  width: 762px;
-  height: 570px;
+  width: 44vw;
+}
+#sectionAbout div:last-of-type {
+  height: 32.91vw;
 }
 #sectionAbout div:first-of-type h3 {
   font-size: 32px;
@@ -22562,7 +22568,7 @@ header > div:last-of-type > div input {
   flex-direction: column;
   justify-content: center;
   background-color: #1a1814;
-  width: 500px;
+  width: 28.5vw;
   min-height: 305px;
   padding-inline: 35px;
 }
@@ -22613,7 +22619,7 @@ header > div:last-of-type > div input {
 #sectionMenu > div:first-of-type > div {
   margin-top: 58px;
   display: flex;
-  width: 770px;
+  width: 45vw;
 }
 #sectionMenu > div:first-of-type > div img {
   width: 85px;
@@ -22681,11 +22687,12 @@ header > div:last-of-type > div input {
   min-height: 847px;
 }
 #sectionEvents #carouselExampleIndicators {
-  margin-top: 52px;
+  margin-top: 0px;
   padding-inline: 85px;
 }
 #sectionEvents #carouselExampleIndicators .carousel-item > div img {
-  width: 763px;
+  width: 44vw;
+  height: 28vw;
 }
 #sectionEvents #carouselExampleIndicators .carousel-item > div > div h3 {
   color: #cda45d;
@@ -22728,15 +22735,14 @@ header > div:last-of-type > div input {
 }
 #sectionReservation form {
   margin-top: 52px;
-  margin-inline: 85px;
-  gap: 30px;
+  gap: 1.7vw;
 }
 #sectionReservation form input {
-  width: 497px;
+  width: 28.6vw;
   height: 52px;
 }
 #sectionReservation form textarea {
-  width: 1552px;
+  width: 89.2vw;
   height: 150px;
   resize: none;
   overflow: hidden;
@@ -22828,7 +22834,7 @@ header > div:last-of-type > div input {
   justify-content: center;
   margin-top: 56px;
   margin-inline: 86px;
-  gap: 145px;
+  gap: 1vw;
 }
 #sectionContact > div > div > div {
   display: flex;
@@ -22854,18 +22860,18 @@ header > div:last-of-type > div input {
   margin-bottom: 0px;
 }
 #sectionContact > div form {
-  gap: 30px;
+  gap: 1.7vw;
 }
 #sectionContact > div form div:not(:nth-of-type(3)) input {
-  width: 500px;
+  width: 28.73vw;
   height: 52px;
 }
 #sectionContact > div form div:nth-of-type(3) input {
-  width: 1030px;
+  width: 59.16vw;
   height: 52px;
 }
 #sectionContact > div form textarea {
-  width: 1030px;
+  width: 59.16vw;
   height: 228px;
   resize: none;
   overflow: hidden;
@@ -22936,7 +22942,7 @@ footer #footerInformation #footerNewsletter form input {
   height: 50px;
   border: 1px solid #cda45d;
   background: #27251f;
-  width: 400px;
+  width: 20vw;
   border-radius: 50px;
 }
 footer #footerInformation #footerNewsletter form button {
