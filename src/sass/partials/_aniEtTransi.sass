@@ -22,8 +22,12 @@
     0%
         opacity: 0
         transform: translateX(100px)
+
 .boutonTransition:hover
     background-color: $jauneRecurent
+    transition: 250ms ease
+.boutonSansTransition:hover
+    filter: brightness(110%)
     transition: 250ms ease
 /* 
  L'input est checked quand on click sur le label car ils sont lier.
@@ -101,3 +105,9 @@ header
         display: none
     #Speciality:checked ~ .speciality
         animation: menuAnimation 200ms
+#sectionGallery > div div:hover img
+    transform: scale(110%)
+    transition: 200ms ease
+#sectionGallery > div div img
+    transform: scale(100%)
+    transition: 200ms ease

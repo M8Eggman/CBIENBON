@@ -22997,6 +22997,11 @@ footer #footerCopyright button a i {
   transition: 250ms ease;
 }
 
+.boutonSansTransition:hover {
+  filter: brightness(110%);
+  transition: 250ms ease;
+}
+
 /* L'input est checked quand on click sur le label car ils sont lier.
  * Une fois que le input est checked cela va lancer une serie de 
  * modification comme: le iframe qui devient visible, le label qui change 
@@ -23090,6 +23095,16 @@ header > div:last-of-type:hover:not(:checked) > div label i {
 }
 #sectionMenu #Speciality:checked ~ .speciality {
   animation: menuAnimation 200ms;
+}
+
+#sectionGallery > div div:hover img {
+  transform: scale(110%);
+  transition: 200ms ease;
+}
+
+#sectionGallery > div div img {
+  transform: scale(100%);
+  transition: 200ms ease;
 }
 
 /*# sourceMappingURL=style.css.map */
