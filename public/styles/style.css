@@ -22343,6 +22343,9 @@ a {
   padding-inline: 30px;
   padding-block: 8px;
 }
+.boutonTransition a {
+  color: white;
+}
 
 .boutonSansTransition {
   background: #cda45d;
@@ -22351,6 +22354,9 @@ a {
   border-radius: 50px;
   padding-inline: 30px;
   padding-block: 8px;
+}
+.boutonSansTransition a {
+  color: white;
 }
 
 .pAvantH2, h2 {
