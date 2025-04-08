@@ -23185,6 +23185,148 @@ footer li a:hover {
   transition: 200ms ease;
 }
 
+@media screen and (width < 576px) {
+  .pAvantH2, h2 {
+    margin-inline: 5vw;
+  }
+  header {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    min-height: auto;
+    padding-bottom: 200px;
+  }
+  header div {
+    text-align: center;
+    justify-content: center;
+  }
+  header > div:last-of-type {
+    margin-top: 50px;
+    margin-right: 0px;
+  }
+  header iframe {
+    width: 80vw;
+    height: 45vw;
+  }
+  #sectionAbout {
+    flex-wrap: wrap-reverse;
+  }
+  #sectionAbout div {
+    width: 90vw;
+  }
+  #sectionAbout div:last-of-type {
+    height: 70vw;
+  }
+  #sectionWhyUs {
+    padding-bottom: 10px;
+  }
+  #sectionWhyUs > div {
+    flex-wrap: wrap;
+  }
+  #sectionWhyUs > div div {
+    width: 90vw;
+  }
+  #sectionMenu > div:first-of-type > div {
+    width: 90vw;
+  }
+  #sectionMenu > div:first-of-type label:first-of-type {
+    margin-left: 15vw;
+  }
+  #sectionMenu > div:first-of-type label:last-of-type {
+    margin-right: 15vw;
+  }
+  #sectionEvents {
+    padding-bottom: 10px;
+  }
+  #sectionEvents #carouselExampleIndicators {
+    padding-inline: 0px;
+  }
+  #sectionEvents #carouselExampleIndicators .carousel-item > div {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #sectionEvents #carouselExampleIndicators .carousel-item > div img {
+    width: 90vw;
+    height: 75vw;
+  }
+  #sectionEvents #carouselExampleIndicators .carousel-item > div > div {
+    width: 90vw;
+  }
+  #sectionReservation {
+    background-color: #0d0b09;
+    min-height: 670px;
+  }
+  #sectionReservation form {
+    margin-top: 52px;
+    gap: 1.5vw;
+  }
+  #sectionReservation form input {
+    width: 90vw;
+    height: 52px;
+  }
+  #sectionReservation form textarea {
+    width: 90vw;
+    height: 150px;
+  }
+  #sectionGallery > div div {
+    width: 90vw;
+    height: 70vw;
+    overflow: hidden;
+  }
+  #sectionGallery > div div img {
+    width: 90vw;
+    height: 70vw;
+  }
+  #sectionChefs > div {
+    gap: 1.5vw;
+  }
+  #sectionChefs > div > div {
+    width: 90vw;
+    height: 90vw;
+  }
+  #sectionContact {
+    padding-bottom: 10px;
+  }
+  #sectionContact > div {
+    flex-wrap: wrap;
+  }
+  #sectionContact > div > div > div {
+    width: 90vw;
+    height: auto;
+  }
+  #sectionContact > div form {
+    gap: 1.5vw;
+  }
+  #sectionContact > div form div:not(:nth-of-type(3)) input {
+    width: 90vw;
+    height: 52px;
+  }
+  #sectionContact > div form div:nth-of-type(3) input {
+    width: 90vw;
+    height: 52px;
+  }
+  #sectionContact > div form textarea {
+    width: 90vw;
+    height: 228px;
+  }
+  footer #footerInformation {
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 2vw;
+  }
+  footer #footerInformation div {
+    width: 95vw;
+  }
+  footer #footerInformation #footerNewsletter form input {
+    width: 85vw;
+  }
+  footer #footerCopyright p {
+    text-align: center;
+    width: 70vw;
+  }
+  footer #footerCopyright button {
+    z-index: 1;
+  }
+}
 @media screen and (576px <= width < 768px) {
   .pAvantH2, h2 {
     margin-inline: 5vw;
@@ -23229,10 +23371,10 @@ footer li a:hover {
     width: 90vw;
   }
   #sectionMenu > div:first-of-type label:first-of-type {
-    margin-left: 25vw;
+    margin-left: 20vw;
   }
   #sectionMenu > div:first-of-type label:last-of-type {
-    margin-right: 25vw;
+    margin-right: 20vw;
   }
   #sectionEvents {
     padding-bottom: 10px;
@@ -23348,8 +23490,12 @@ footer li a:hover {
     width: 51.5vw;
     height: 228px;
   }
-  footer #footerNewsletter {
-    width: 25vw;
+  footer #footerInformation {
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+  footer #footerInformation #footerNewsletter {
+    width: 50vw;
   }
 }
 
