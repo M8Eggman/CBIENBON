@@ -22331,6 +22331,10 @@ body {
   font-family: "Montserrat" !important;
 }
 
+a {
+  text-decoration: none;
+}
+
 .boutonTransition {
   background: none;
   color: white;
@@ -22844,6 +22848,43 @@ header > div:last-of-type div button i {
 }
 #sectionContact > div form textarea::placeholder {
   top: 11px;
+}
+
+footer #footerInformation {
+  border-top: solid 1px #38352c;
+  background-color: #0d0b09;
+  min-height: 410px;
+}
+footer #footerCopyright {
+  position: relative;
+  border-top: solid 1px #38352c;
+  background-color: black;
+  min-height: 110px;
+}
+footer #footerCopyright p {
+  margin-top: 10px;
+  color: white;
+}
+footer #footerCopyright button {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  width: 52px;
+  height: 52px;
+  border: solid 3px #cda45d;
+  border-radius: 50%;
+  background: none;
+}
+footer #footerCopyright button a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer #footerCopyright button a i {
+  font-size: 20px;
+  color: #cda45d;
 }
 
 /*# sourceMappingURL=style.css.map */
