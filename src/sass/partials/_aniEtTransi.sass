@@ -22,7 +22,12 @@
 .boutonTransition:hover
     background-color: $jauneRecurent
     transition: 250ms ease
-header 
+/* 
+ L'input est checked quand on click sur le label car ils sont lier.
+ Une fois que le input est checked cela va lancer une serie de 
+ modification comme: le iframe qui devient visible, le label qui change 
+ de position pour pouvoir fermer la video, ...
+header
     > div:last-of-type> div > input:checked
         ~ label
             position: fixed
