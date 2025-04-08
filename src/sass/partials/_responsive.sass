@@ -9,3 +9,45 @@
 
 // ecran laptop
 @media screen and (768px <= width < 992px)
+    #sectionWhyUs, #sectionEvents
+        padding-bottom: 10px
+    #sectionMenu > div:first-of-type
+        label:first-of-type
+            margin-left: 25vw
+        label:last-of-type
+            margin-right: 25vw
+    #sectionContact > div 
+        > div > div
+            width: 45vw
+            height: auto
+        form
+            gap: 1.5vw
+            div:not(:nth-of-type(3)) input
+                width: 25vw
+                height: 52px
+            div:nth-of-type(3) input
+                width: 51.5vw
+                height: 52px
+            textarea
+                width: 51.5vw
+                height: 228px
+    header 
+        gap: 10px
+        > div:last-of-type
+            margin-right: 10px
+        iframe
+            width: 80vw
+            height: 45vw
+    footer #footerNewsletter 
+        width: 25vw
+        form
+            input
+                height: 50px
+                border: 1px solid $jauneRecurent
+                background: $JSP
+                width: 20vw
+                border-radius: 50px
+            button
+                padding-inline: 2px
+            label 
+                display: none

@@ -22457,7 +22457,7 @@ header > div:first-of-type div {
 header > div:last-of-type {
   border-radius: 50%;
   background-color: rgba(205, 164, 93, 0.5019607843);
-  width: 110px;
+  min-width: 110px;
   height: 110px;
   margin-top: 130px;
   margin-right: 195px;
@@ -22843,7 +22843,7 @@ header > div:last-of-type > div input {
   width: max-content;
 }
 #sectionContact > div > div > div > div:first-of-type {
-  width: 52px;
+  min-width: 52px;
   height: 52px;
   border-radius: 50%;
   background-color: #cda45d;
@@ -22907,7 +22907,10 @@ footer #footerInformation h4 {
 footer #footerInformation li {
   margin-bottom: 22px;
 }
-footer #footerInformation li i {
+footer #footerInformation li span {
+  width: 24px;
+}
+footer #footerInformation li span i {
   color: #cda45d;
   font-size: 12px;
   position: relative;
@@ -23058,8 +23061,8 @@ header > div:last-of-type > div > input:checked ~ div {
   left: 0;
   display: block;
   background-color: rgba(0, 0, 0, 0.75);
-  width: 99vw;
-  height: 99vh;
+  width: 100vw;
+  height: 120vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23179,6 +23182,63 @@ footer li a {
 footer li a:hover {
   color: #cda45d !important;
   transition: 200ms ease;
+}
+
+@media screen and (768px <= width < 992px) {
+  #sectionWhyUs, #sectionEvents {
+    padding-bottom: 10px;
+  }
+  #sectionMenu > div:first-of-type label:first-of-type {
+    margin-left: 25vw;
+  }
+  #sectionMenu > div:first-of-type label:last-of-type {
+    margin-right: 25vw;
+  }
+  #sectionContact > div > div > div {
+    width: 45vw;
+    height: auto;
+  }
+  #sectionContact > div form {
+    gap: 1.5vw;
+  }
+  #sectionContact > div form div:not(:nth-of-type(3)) input {
+    width: 25vw;
+    height: 52px;
+  }
+  #sectionContact > div form div:nth-of-type(3) input {
+    width: 51.5vw;
+    height: 52px;
+  }
+  #sectionContact > div form textarea {
+    width: 51.5vw;
+    height: 228px;
+  }
+  header {
+    gap: 10px;
+  }
+  header > div:last-of-type {
+    margin-right: 10px;
+  }
+  header iframe {
+    width: 80vw;
+    height: 45vw;
+  }
+  footer #footerNewsletter {
+    width: 25vw;
+  }
+  footer #footerNewsletter form input {
+    height: 50px;
+    border: 1px solid #cda45d;
+    background: #27251f;
+    width: 20vw;
+    border-radius: 50px;
+  }
+  footer #footerNewsletter form button {
+    padding-inline: 2px;
+  }
+  footer #footerNewsletter form label {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
