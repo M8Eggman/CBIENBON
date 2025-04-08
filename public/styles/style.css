@@ -22851,9 +22851,68 @@ header > div:last-of-type div button i {
 }
 
 footer #footerInformation {
+  padding-top: 73px;
   border-top: solid 1px #38352c;
   background-color: #0d0b09;
   min-height: 410px;
+}
+footer #footerInformation h3, footer #footerInformation h4, footer #footerInformation a, footer #footerInformation p, footer #footerInformation div > i {
+  color: white;
+}
+footer #footerInformation h4, footer #footerInformation h3 {
+  margin-bottom: 23px;
+}
+footer #footerInformation h4 {
+  font-size: 20px;
+}
+footer #footerInformation li {
+  margin-bottom: 22px;
+}
+footer #footerInformation li i {
+  color: #cda45d;
+  font-size: 12px;
+  position: relative;
+  bottom: 1px;
+}
+footer #footerInformation #footerContact p:first-of-type {
+  margin-bottom: 35px;
+}
+footer #footerInformation #footerContact > div {
+  gap: 10px;
+}
+footer #footerInformation #footerContact > div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  background-color: #27251f;
+  border-radius: 50%;
+}
+footer #footerInformation #footerNewsletter {
+  max-width: 500px;
+}
+footer #footerInformation #footerNewsletter p {
+  margin-bottom: 40px;
+}
+footer #footerInformation #footerNewsletter form {
+  display: flex;
+  align-items: center;
+}
+footer #footerInformation #footerNewsletter form input {
+  height: 50px;
+  border: 1px solid #cda45d;
+  background: #27251f;
+  width: 400px;
+  border-radius: 50px;
+}
+footer #footerInformation #footerNewsletter form button {
+  height: 50px;
+  position: relative;
+  right: 50px;
+}
+footer #footerInformation #footerNewsletter form label {
+  display: none;
 }
 footer #footerCopyright {
   position: relative;
