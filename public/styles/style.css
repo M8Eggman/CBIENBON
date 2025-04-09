@@ -23083,6 +23083,10 @@ header > div:last-of-type:hover:not(:checked) > div label i {
   animation: boutonHeader 333ms ease-in;
 }
 
+nav ul li:hover a {
+  color: #cda45d !important;
+}
+
 #sectionAbout div:last-of-type:hover {
   transform: scale(105%);
   transition: 500ms ease;
