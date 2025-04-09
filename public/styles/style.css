@@ -23169,11 +23169,11 @@ header > div:last-of-type:hover:not(:checked) > div label i {
   animation: chefs 200ms;
 }
 
-footer #footerCopyright:hover button {
+footer #footerCopyright button:hover {
   background-color: #cda45d;
   transition: 200ms ease;
 }
-footer #footerCopyright:hover button i {
+footer #footerCopyright button:hover i {
   color: white;
   transition: 200ms ease;
 }
