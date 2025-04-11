@@ -22735,15 +22735,19 @@ header > div:last-of-type > div input {
   min-height: 910px;
 }
 #sectionGallery > div {
+  width: 100%;
+}
+#sectionGallery > div > div {
+  width: 98vw;
   margin-top: 50px;
 }
-#sectionGallery > div div {
+#sectionGallery > div > div div {
   border: 2px solid rgba(128, 128, 128, 0.5);
   width: 24.4vw;
   height: 18.3vw;
   overflow: hidden;
 }
-#sectionGallery > div div img {
+#sectionGallery > div > div div img {
   width: 24.3vw;
   height: 18.2vw;
 }
@@ -23126,7 +23130,7 @@ nav {
   animation: menuAnimation 200ms;
 }
 
-#sectionGallery > div div:hover img {
+#sectionGallery > div > div div:hover img {
   transform: scale(110%);
   transition: 200ms ease;
 }
@@ -23233,12 +23237,15 @@ footer li a:hover {
     width: 90vw;
     height: 150px;
   }
-  #sectionGallery > div div {
+  #sectionGallery > div > div {
+    width: 90vw;
+  }
+  #sectionGallery > div > div div {
     width: 90vw;
     height: 70vw;
     overflow: hidden;
   }
-  #sectionGallery > div div img {
+  #sectionGallery > div > div div img {
     width: 90vw;
     height: 70vw;
   }
@@ -23369,12 +23376,15 @@ footer li a:hover {
     width: 90vw;
     height: 150px;
   }
-  #sectionGallery > div div {
+  #sectionGallery > div > div {
+    width: 90vw;
+  }
+  #sectionGallery > div > div div {
     width: 30vw;
     height: 24vw;
     overflow: hidden;
   }
-  #sectionGallery > div div img {
+  #sectionGallery > div > div div img {
     width: 30vw;
     height: 24vw;
   }
