@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- nav botstrap-->
-    <nav class="navbar navbar-expand-lg">
+    <nav id="navbar-example" class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">CBIENBON</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,431 +18,443 @@
         <div class="collapse justify-content-center navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#sectionAbout">About</a>
+              <a class="nav-link" aria-current="page" href="#sectionAbout">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#sectionMenu">Menu</a>
+              <a class="nav-link" aria-current="page" href="#sectionMenu">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#sectionEvents">Events</a>
+              <a class="nav-link" aria-current="page" href="#sectionEvents">Events</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#sectionGallery">Gallery</a>
+              <a class="nav-link" aria-current="page" href="#sectionGallery">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#sectionChefs">Chefs</a>
+              <a class="nav-link" aria-current="page" href="#sectionChefs">Chefs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#sectionContact">Contact</a>
+              <a class="nav-link" aria-current="page" href="#sectionContact">Contact</a>
             </li>
           </ul>
           <button class="boutonTransition d-lg-none"><a href="#sectionReservation">BOOK A TABLE</a></button>
         </div>
         <button class="boutonTransition d-lg-block"><a href="#sectionReservation">BOOK A TABLE</a></button>
       </div>
-      <button class="d-flex align-items-center justify-content-center"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></button>
+      <button class="d-flex align-items-center justify-content-center">
+        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+      </button>
     </nav>
     <!-- nav bootstrap -->
 
-    <!-- header -->
-    <header class="d-flex align-items-center">
-      <div>
-        <h1>Welcome to <b>CBIENBON</b></h1>
-        <p>Delivering great food for more than 18 years!</p>
-        <div class="d-flex">
-          <button class="boutonTransition"><a href="#sectionMenu">OUR MENU</a></button>
-          <button class="boutonTransition"><a href="#sectionReservation">BOOK A TABLE</a></button>
-        </div>
-      </div>
-      <div class="d-flex justify-content-center align-items-center">
+    <!-- scroll spy bootstrap -->
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary rounded-2" tabindex="0">
+      <!-- header -->
+      <header id="home" class="d-flex align-items-center">
         <div>
-          <input type="checkbox" name="" id="video">
-          <label class="d-flex justify-content-center align-items-center" for="video">
-            <i class="fa-solid fa-play"></i>
-          </label>
+          <h1>Welcome to <b>CBIENBON</b></h1>
+          <p>Delivering great food for more than 18 years!</p>
+          <div class="d-flex">
+            <button class="boutonTransition"><a href="#sectionMenu">OUR MENU</a></button>
+            <button class="boutonTransition"><a href="#sectionReservation">BOOK A TABLE</a></button>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
           <div>
-            <iframe width="50vw" height="75vw" src="https://www.youtube.com/embed/aFLFujQNX9s?si=LMmhfkxA9nLHM0nL&amp;start=61" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <input type="checkbox" name="" id="video" />
+            <label class="d-flex justify-content-center align-items-center" for="video">
+              <i class="fa-solid fa-play"></i>
+            </label>
+            <div>
+              <iframe
+                width="50vw"
+                height="75vw"
+                src="https://www.youtube.com/embed/aFLFujQNX9s?si=LMmhfkxA9nLHM0nL&amp;start=61"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-    <!-- header -->
+      </header>
+      <!-- header -->
 
-    <!-- section about -->
-    <section class="d-flex" id="sectionAbout">
-      <div>
-        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-        <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>
-        <ul class="fa-ul">
-          <li>
-            <span class="fa-li"><i class="fa-solid fa-check"></i></span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </li>
-          <li>
-            <span class="fa-li"><i class="fa-solid fa-check"></i></span>Duis aute irure dolor in reprehenderit in voluptate velit.
-          </li>
-          <li>
-            <span class="fa-li"><i class="fa-solid fa-check"></i></span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
-            pariatur.
-          </li>
-        </ul>
-        <p>
-          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id est laborum
-        </p>
-      </div>
-      <div class="d-flex justify-content-between align-items-center">
-        <i class="fa-solid fa-chevron-up"></i>
-        <i class="fa-solid fa-chevron-down"></i>
-      </div>
-    </section>
-    <!-- section about -->
-
-    <!-- section why us -->
-    <section id="sectionWhyUs">
-      <p class="pAvantH2">WHY US</p>
-      <h2>Why Choose Our Restaurant</h2>
-      <div class="d-flex justify-content-center">
+      <!-- section about -->
+      <section id="sectionAbout" class="d-flex" >
         <div>
-          <p>01</p>
-          <h4>Lorem Ipsum</h4>
-          <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+          <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+          <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>
+          <ul class="fa-ul">
+            <li>
+              <span class="fa-li"><i class="fa-solid fa-check"></i></span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </li>
+            <li>
+              <span class="fa-li"><i class="fa-solid fa-check"></i></span>Duis aute irure dolor in reprehenderit in voluptate velit.
+            </li>
+            <li>
+              <span class="fa-li"><i class="fa-solid fa-check"></i></span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+              pariatur.
+            </li>
+          </ul>
+          <p>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum
+          </p>
         </div>
-        <div>
-          <p>02</p>
-          <h4>Repellat Nihil</h4>
-          <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <i class="fa-solid fa-chevron-up"></i>
+          <i class="fa-solid fa-chevron-down"></i>
         </div>
-        <div>
-          <p>03</p>
-          <h4>Ad ad velit qui</h4>
-          <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-        </div>
-      </div>
-    </section>
-    <!-- section why us -->
+      </section>
+      <!-- section about -->
 
-    <!-- section menu -->
-    <section id="sectionMenu">
-      <p class="pAvantH2">MENU</p>
-      <h2>Check Our Tasty Menu</h2>
-      <div class="d-flex justify-content-center">
-        <input type="radio" name="Menu" id="All" checked="checked" />
-        <label for="All">All</label>
-        <input type="radio" name="Menu" id="Starters" />
-        <label for="Starters">Starters</label>
-        <input type="radio" name="Menu" id="Salads" />
-        <label for="Salads">Salads</label>
-        <input type="radio" name="Menu" id="Speciality" />
-        <label for="Speciality">Speciality</label>
-        <div class="d-flex flex-wrap">
-          <div class="starters">
-            <img src="./public/assets/img/menu/lobster-bisque.jpg" alt="" />
-            <div>
-              <div>
-                <p>Lobster Bisque</p>
-                <p>$5.95</p>
-              </div>
-              <p>Lorem, deren, trataro, filede, nerada</p>
-            </div>
-          </div>
-          <div class="speciality">
-            <img src="./public/assets/img/menu/bread-barrel.jpg" alt="" />
-            <div>
-              <div>
-                <p>Bread Barrel</p>
-                <p>$6.95</p>
-              </div>
-              <p>Lorem, deren, trataro, filede, nerada</p>
-            </div>
-          </div>
-          <div class="starters">
-            <img src="./public/assets/img/menu/cake.jpg" alt="" />
-            <div>
-              <div>
-                <p>Crab Cake</p>
-                <p>$7.95</p>
-              </div>
-              <p>A delicate crab cake served on a toasted roll with lettuce and tartar sauce</p>
-            </div>
-          </div>
-          <div class="salads">
-            <img src="./public/assets/img/menu/caesar.jpg" alt="" />
-            <div>
-              <div>
-                <p>Caesar Selections</p>
-                <p>$8.95</p>
-              </div>
-              <p>Lorem, deren, trataro, filede, nerada</p>
-            </div>
-          </div>
-          <div class="speciality">
-            <img src="./public/assets/img/menu/tuscan-grilled.jpg" alt="" />
-            <div>
-              <div>
-                <p>Tuscan Grilled</p>
-                <p>$9.95</p>
-              </div>
-              <p>Grilled chicken with provolone, artichoke, hearts, and roasted red pesto</p>
-            </div>
-          </div>
-          <div class="starters">
-            <img src="./public/assets/img/menu/mozzarella.jpg" alt="" />
-            <div>
-              <div>
-                <p>Mozzarella Stick</p>
-                <p>$4.95</p>
-              </div>
-              <p>Lorem, deren, trataro, filede, nerada</p>
-            </div>
-          </div>
-          <div class="salads">
-            <img src="./public/assets/img/menu/greek-salad.jpg" alt="" />
-            <div>
-              <div>
-                <p>Greek Salad</p>
-                <p>$9.95</p>
-              </div>
-              <p>Fresh spinach, crisp romaine, tomatoes, and Greek olives</p>
-            </div>
-          </div>
-          <div class="salads">
-            <img src="./public/assets/img/menu/spinach-salad.jpg" alt="" />
-            <div>
-              <div>
-                <p>Spinach Salad</p>
-                <p>$9.95</p>
-              </div>
-              <p>Fresh spinach with mushrooms, hard boled egg, and warm bacon vinaigrette</p>
-            </div>
-          </div>
-          <div class="speciality">
-            <img src="./public/assets/img/menu/lobster-roll.jpg" alt="" />
-            <div>
-              <div>
-                <p>Lobster Roll</p>
-                <p>$12.95</p>
-              </div>
-              <p>Plump lobster meat,maya and crisp lettuce on a toasted bulky roll</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- section menu -->
-
-    <!-- section events -->
-    <section id="sectionEvents">
-      <p class="pAvantH2">EVENTS</p>
-      <h2>Organize Your Events in our Restaurant</h2>
-      <!-- carousel bootstrap-->
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="d-flex gap-4">
-              <img src="./public/assets/img/event-birthday.jpg" class="d-block" alt="..." />
-              <div>
-                <h3>Birthday Parties</h3>
-                <p>$189</p>
-                <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>
-                <ul>
-                  <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                </ul>
-                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat- Duis aute irure dolor in reprehenderlt ln voluptate vellt esse clllum dolore eu fugiat nulla pariatur</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-flex gap-4">
-              <img src="./public/assets/img/event-private.jpg" class="d-block" alt="..." />
-              <div>
-                <h3>Private Parties</h3>
-                <p>$290</p>
-                <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>
-                <ul>
-                  <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                </ul>
-                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat- Duis aute irure dolor in reprehenderlt ln voluptate vellt esse clllum dolore eu fugiat nulla pariatur</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-flex gap-4">
-              <img src="./public/assets/img/event-custom.jpg" class="d-block" alt="..." />
-              <div>
-                <h3>Custom Parties</h3>
-                <p>$99</p>
-                <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>
-                <ul>
-                  <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                </ul>
-                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat- Duis aute irure dolor in reprehenderlt ln voluptate vellt esse clllum dolore eu fugiat nulla pariatur</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-      </div>
-      <!-- carousel bootstrap -->
-    </section>
-    <!-- section events -->
-
-    <!-- section reservation -->
-    <section id="sectionReservation">
-      <p class="pAvantH2">RESERVATION</p>
-      <h2>Book a Table</h2>
-      <form class="d-flex justify-content-center flex-wrap">
-        <div><label for=""></label><input type="text" placeholder="Your Name" /></div>
-        <div><label for=""></label><input type="email" placeholder="Your Email" /></div>
-        <div><label for=""></label><input type="number" placeholder="Your phone" /></div>
-        <div><label for=""></label><input type="text" placeholder="Date" /></div>
-        <div><label for=""></label><input type="text" placeholder="Time" /></div>
-        <div><label for=""></label><input type="number" placeholder="# of people" /></div>
-        <div><label for=""></label><textarea name="" id="" placeholder="Message"></textarea></div>
-        <button class="boutonSansTransition">Book a Table</button>
-      </form>
-    </section>
-    <!-- section reservation -->
-
-    <!-- section gallery -->
-    <section id="sectionGallery">
-      <p class="pAvantH2">GALLERY</p>
-      <h2>Some photos from Our Restaurant</h2>
-      <div class="d-flex justify-content-center">
-        <div class="d-flex flex-wrap">
-          <div><img src="./public/assets/img/gallery/gallery-1.jpg" alt="" /></div>
-          <div><img src="./public/assets/img/gallery/gallery-2.jpg" alt="" /></div>
-          <div><img src="./public/assets/img/gallery/gallery-3.jpg" alt="" /></div>
-          <div><img src="./public/assets/img/gallery/gallery-4.jpg" alt="" /></div>
-          <div><img src="./public/assets/img/gallery/gallery-5.jpg" alt="" /></div>
-          <div><img src="./public/assets/img/gallery/gallery-6.jpg" alt="" /></div>
-          <div><img src="./public/assets/img/gallery/gallery-7.jpg" alt="" /></div>
-          <div><img src="./public/assets/img/gallery/gallery-8.jpg" alt="" /></div>
-        </div>
-      </div>
-    </section>
-    <!-- section gallery -->
-
-    <!-- section chefs -->
-    <section id="sectionChefs">
-      <p class="pAvantH2">CHEFS</p>
-      <h2>Our Profesisonal Chefs</h2>
-      <div class="d-flex flex-wrap justify-content-center">
-        <div>
-          <div class="d-none">
-            <p>Walter White</p>
-            <p>Master Chef</p>
-            <div class="d-flex justify-content-center gap-3">
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-linkedin"></i>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="d-none">
-            <p>Sarah Jhonson</p>
-            <p>Patissier</p>
-            <div class="d-flex justify-content-center gap-3">
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-linkedin"></i>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="d-none">
-            <p>William Anderson</p>
-            <p>Cook</p>
-            <div class="d-flex justify-content-center gap-3">
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-linkedin"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- section chefs -->
-
-    <!-- section contact -->
-    <section id="sectionContact">
-      <p class="pAvantH2">CONTACT</p>
-      <h2>Contact Us</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.6937380587447!2d4.33864507675225!3d50.85535537167232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c38c275028d3%3A0xc7799151146ebf77!2sMolenGeek!5e0!3m2!1sfr!2sbe!4v1744034954624!5m2!1sfr!2sbe"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-      <div>
-        <div>
+      <!-- section why us -->
+      <section id="sectionWhyUs">
+        <p class="pAvantH2">WHY US</p>
+        <h2>Why Choose Our Restaurant</h2>
+        <div class="d-flex justify-content-center">
           <div>
-            <div>
-              <i class="fa-solid fa-location-dot"></i>
-            </div>
-            <div>
-              <p>Location:</p>
-              <p>A108 Adam Street, New York, NY 535022</p>
-            </div>
+            <p>01</p>
+            <h4>Lorem Ipsum</h4>
+            <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
           </div>
           <div>
-            <div>
-              <i class="fa-solid fa-clock"></i>
-            </div>
-            <div>
-              <p>Open Hours:</p>
-              <p>Monday-Saturday:<br />11:00 AM - 23:00 PM</p>
-            </div>
+            <p>02</p>
+            <h4>Repellat Nihil</h4>
+            <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
           </div>
           <div>
-            <div>
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div>
-              <p>Email:</p>
-              <p>info@example.com</p>
-            </div>
+            <p>03</p>
+            <h4>Ad ad velit qui</h4>
+            <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
           </div>
-          <div>
-            <div>
-              <i class="fa-solid fa-mobile-button"></i>
+        </div>
+      </section>
+      <!-- section why us -->
+
+      <!-- section menu -->
+      <section id="sectionMenu">
+        <p class="pAvantH2">MENU</p>
+        <h2>Check Our Tasty Menu</h2>
+        <div class="d-flex justify-content-center">
+          <input type="radio" name="Menu" id="All" checked="checked" />
+          <label for="All">All</label>
+          <input type="radio" name="Menu" id="Starters" />
+          <label for="Starters">Starters</label>
+          <input type="radio" name="Menu" id="Salads" />
+          <label for="Salads">Salads</label>
+          <input type="radio" name="Menu" id="Speciality" />
+          <label for="Speciality">Speciality</label>
+          <div class="d-flex flex-wrap">
+            <div class="starters">
+              <img src="./public/assets/img/menu/lobster-bisque.jpg" alt="" />
+              <div>
+                <div>
+                  <p>Lobster Bisque</p>
+                  <p>$5.95</p>
+                </div>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+              </div>
             </div>
-            <div>
-              <p>Call:</p>
-              <p>+1 5589 55488 55s</p>
+            <div class="speciality">
+              <img src="./public/assets/img/menu/bread-barrel.jpg" alt="" />
+              <div>
+                <div>
+                  <p>Bread Barrel</p>
+                  <p>$6.95</p>
+                </div>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+              </div>
+            </div>
+            <div class="starters">
+              <img src="./public/assets/img/menu/cake.jpg" alt="" />
+              <div>
+                <div>
+                  <p>Crab Cake</p>
+                  <p>$7.95</p>
+                </div>
+                <p>A delicate crab cake served on a toasted roll with lettuce and tartar sauce</p>
+              </div>
+            </div>
+            <div class="salads">
+              <img src="./public/assets/img/menu/caesar.jpg" alt="" />
+              <div>
+                <div>
+                  <p>Caesar Selections</p>
+                  <p>$8.95</p>
+                </div>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+              </div>
+            </div>
+            <div class="speciality">
+              <img src="./public/assets/img/menu/tuscan-grilled.jpg" alt="" />
+              <div>
+                <div>
+                  <p>Tuscan Grilled</p>
+                  <p>$9.95</p>
+                </div>
+                <p>Grilled chicken with provolone, artichoke, hearts, and roasted red pesto</p>
+              </div>
+            </div>
+            <div class="starters">
+              <img src="./public/assets/img/menu/mozzarella.jpg" alt="" />
+              <div>
+                <div>
+                  <p>Mozzarella Stick</p>
+                  <p>$4.95</p>
+                </div>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+              </div>
+            </div>
+            <div class="salads">
+              <img src="./public/assets/img/menu/greek-salad.jpg" alt="" />
+              <div>
+                <div>
+                  <p>Greek Salad</p>
+                  <p>$9.95</p>
+                </div>
+                <p>Fresh spinach, crisp romaine, tomatoes, and Greek olives</p>
+              </div>
+            </div>
+            <div class="salads">
+              <img src="./public/assets/img/menu/spinach-salad.jpg" alt="" />
+              <div>
+                <div>
+                  <p>Spinach Salad</p>
+                  <p>$9.95</p>
+                </div>
+                <p>Fresh spinach with mushrooms, hard boled egg, and warm bacon vinaigrette</p>
+              </div>
+            </div>
+            <div class="speciality">
+              <img src="./public/assets/img/menu/lobster-roll.jpg" alt="" />
+              <div>
+                <div>
+                  <p>Lobster Roll</p>
+                  <p>$12.95</p>
+                </div>
+                <p>Plump lobster meat,maya and crisp lettuce on a toasted bulky roll</p>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+      <!-- section menu -->
+
+      <!-- section events -->
+      <section id="sectionEvents">
+        <p class="pAvantH2">EVENTS</p>
+        <h2>Organize Your Events in our Restaurant</h2>
+        <!-- carousel bootstrap-->
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex gap-4">
+                <img src="./public/assets/img/event-birthday.jpg" class="d-block" alt="..." />
+                <div>
+                  <h3>Birthday Parties</h3>
+                  <p>$189</p>
+                  <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>
+                  <ul>
+                    <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  </ul>
+                  <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat- Duis aute irure dolor in reprehenderlt ln voluptate vellt esse clllum dolore eu fugiat nulla pariatur</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex gap-4">
+                <img src="./public/assets/img/event-private.jpg" class="d-block" alt="..." />
+                <div>
+                  <h3>Private Parties</h3>
+                  <p>$290</p>
+                  <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>
+                  <ul>
+                    <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  </ul>
+                  <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat- Duis aute irure dolor in reprehenderlt ln voluptate vellt esse clllum dolore eu fugiat nulla pariatur</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex gap-4">
+                <img src="./public/assets/img/event-custom.jpg" class="d-block" alt="..." />
+                <div>
+                  <h3>Custom Parties</h3>
+                  <p>$99</p>
+                  <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>
+                  <ul>
+                    <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  </ul>
+                  <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat- Duis aute irure dolor in reprehenderlt ln voluptate vellt esse clllum dolore eu fugiat nulla pariatur</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+        <!-- carousel bootstrap -->
+      </section>
+      <!-- section events -->
+
+      <!-- section reservation -->
+      <section id="sectionReservation">
+        <p class="pAvantH2">RESERVATION</p>
+        <h2>Book a Table</h2>
         <form class="d-flex justify-content-center flex-wrap">
           <div><label for=""></label><input type="text" placeholder="Your Name" /></div>
           <div><label for=""></label><input type="email" placeholder="Your Email" /></div>
-          <div><label for=""></label><input type="text" placeholder="Subject" /></div>
+          <div><label for=""></label><input type="number" placeholder="Your phone" /></div>
+          <div><label for=""></label><input type="text" placeholder="Date" /></div>
+          <div><label for=""></label><input type="text" placeholder="Time" /></div>
+          <div><label for=""></label><input type="number" placeholder="# of people" /></div>
           <div><label for=""></label><textarea name="" id="" placeholder="Message"></textarea></div>
-          <button class="boutonSansTransition">Send Message</button>
+          <button class="boutonSansTransition">Book a Table</button>
         </form>
-      </div>
-    </section>
-    <!-- section contact -->
+      </section>
+      <!-- section reservation -->
 
+      <!-- section gallery -->
+      <section id="sectionGallery">
+        <p class="pAvantH2">GALLERY</p>
+        <h2>Some photos from Our Restaurant</h2>
+        <div class="d-flex justify-content-center">
+          <div class="d-flex flex-wrap">
+            <div><img src="./public/assets/img/gallery/gallery-1.jpg" alt="" /></div>
+            <div><img src="./public/assets/img/gallery/gallery-2.jpg" alt="" /></div>
+            <div><img src="./public/assets/img/gallery/gallery-3.jpg" alt="" /></div>
+            <div><img src="./public/assets/img/gallery/gallery-4.jpg" alt="" /></div>
+            <div><img src="./public/assets/img/gallery/gallery-5.jpg" alt="" /></div>
+            <div><img src="./public/assets/img/gallery/gallery-6.jpg" alt="" /></div>
+            <div><img src="./public/assets/img/gallery/gallery-7.jpg" alt="" /></div>
+            <div><img src="./public/assets/img/gallery/gallery-8.jpg" alt="" /></div>
+          </div>
+        </div>
+      </section>
+      <!-- section gallery -->
+
+      <!-- section chefs -->
+      <section id="sectionChefs">
+        <p class="pAvantH2">CHEFS</p>
+        <h2>Our Profesisonal Chefs</h2>
+        <div class="d-flex flex-wrap justify-content-center">
+          <div>
+            <div class="d-none">
+              <p>Walter White</p>
+              <p>Master Chef</p>
+              <div class="d-flex justify-content-center gap-3">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="d-none">
+              <p>Sarah Jhonson</p>
+              <p>Patissier</p>
+              <div class="d-flex justify-content-center gap-3">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="d-none">
+              <p>William Anderson</p>
+              <p>Cook</p>
+              <div class="d-flex justify-content-center gap-3">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section chefs -->
+
+      <!-- section contact -->
+      <section id="sectionContact">
+        <p class="pAvantH2">CONTACT</p>
+        <h2>Contact Us</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.6937380587447!2d4.33864507675225!3d50.85535537167232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c38c275028d3%3A0xc7799151146ebf77!2sMolenGeek!5e0!3m2!1sfr!2sbe!4v1744034954624!5m2!1sfr!2sbe"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div>
+          <div>
+            <div>
+              <div>
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <p>Location:</p>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <p>Open Hours:</p>
+                <p>Monday-Saturday:<br />11:00 AM - 23:00 PM</p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <p>Email:</p>
+                <p>info@example.com</p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i class="fa-solid fa-mobile-button"></i>
+              </div>
+              <div>
+                <p>Call:</p>
+                <p>+1 5589 55488 55s</p>
+              </div>
+            </div>
+          </div>
+          <form class="d-flex justify-content-center flex-wrap">
+            <div><label for=""></label><input type="text" placeholder="Your Name" /></div>
+            <div><label for=""></label><input type="email" placeholder="Your Email" /></div>
+            <div><label for=""></label><input type="text" placeholder="Subject" /></div>
+            <div><label for=""></label><textarea name="" id="" placeholder="Message"></textarea></div>
+            <button class="boutonSansTransition">Send Message</button>
+          </form>
+        </div>
+      </section>
+      <!-- section contact -->
+    </div>
     <!-- footer -->
     <footer>
       <section class="d-flex justify-content-around" id="footerInformation">

@@ -23056,6 +23056,10 @@ header > div:last-of-type:hover:not(:checked) > div label i {
   animation: boutonHeader 333ms ease-in;
 }
 
+nav .active {
+  color: #cda45d !important;
+  transition: 200ms ease !important;
+}
 nav ul li:hover a {
   color: #cda45d !important;
 }
