@@ -77,7 +77,13 @@ header
             animation: boutonHeader 333ms ease-in
 nav
     ul li:hover a
-    color: $jauneRecurent !important
+        color: $jauneRecurent !important
+    > button:hover
+        background-color: $jauneRecurent
+        transition: 200ms ease
+        i
+            color: white
+            transition: 200ms ease
 #sectionAbout
     div:last-of-type:hover
         transform: scale(105%)
@@ -141,12 +147,6 @@ nav
         p, i
             animation: chefs 200ms
 footer
-    #footerCopyright button:hover
-        background-color: $jauneRecurent
-        transition: 200ms ease
-        i
-            color: white
-            transition: 200ms ease
     li a
             transition: 200ms ease
     li a:hover
