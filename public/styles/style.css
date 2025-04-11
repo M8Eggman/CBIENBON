@@ -10475,7 +10475,7 @@ readers do not read off random characters that represent icons */
 }
 
 /*!
- * Bootstrap  v5.3.4 (https://getbootstrap.com/)
+ * Bootstrap  v5.3.5 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
@@ -22597,88 +22597,57 @@ header > div:last-of-type > div input {
   background-color: #1a1814;
   padding-bottom: 70px;
 }
-#sectionMenu > div:first-of-type {
+#sectionMenu > div {
   margin-top: 57px;
-  gap: 25px;
   column-gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
 }
-#sectionMenu > div:first-of-type input {
+#sectionMenu > div input {
   display: none;
 }
-#sectionMenu > div:first-of-type label {
+#sectionMenu > div label {
   font-size: 20px;
   color: white;
 }
-#sectionMenu > div:first-of-type label:first-of-type {
-  margin-left: 30vw;
+#sectionMenu > div > div {
+  gap: 1vw;
+  width: 90vw;
 }
-#sectionMenu > div:first-of-type label:last-of-type {
-  margin-right: 30vw;
-}
-#sectionMenu > div:first-of-type > div {
-  margin-top: 50px;
+#sectionMenu > div > div > div {
   display: flex;
-  width: 45vw;
+  margin-top: 50px;
+  width: 44vw;
 }
-#sectionMenu > div:first-of-type > div img {
+#sectionMenu > div > div > div img {
   width: 85px;
   height: 85px;
   border: solid 8px rgba(128, 128, 128, 0.5);
   border-radius: 50px;
 }
-#sectionMenu > div:first-of-type > div > div {
+#sectionMenu > div > div > div > div {
   width: 685px;
   margin-left: 20px;
 }
-#sectionMenu > div:first-of-type > div > div p:first-of-type {
+#sectionMenu > div > div > div > div > div {
+  display: flex;
+  justify-content: space-between;
+}
+#sectionMenu > div > div > div > div > div p {
+  position: relative;
   margin-bottom: 0px;
   font-size: 18px;
   font-weight: 600;
-  color: #cda45d;
 }
-#sectionMenu > div:first-of-type > div > div p:first-of-type span {
+#sectionMenu > div > div > div > div > div p:first-of-type {
   color: white;
 }
-#sectionMenu > div:first-of-type > div > div p:first-of-type span::after {
-  content: "";
-  display: inline-block;
-  position: relative;
-  bottom: 5px;
-  border: dotted 2px;
-  margin-inline: 5px;
+#sectionMenu > div > div > div > div > div p:last-of-type {
+  color: #cda45d;
 }
-#sectionMenu > div:first-of-type > div > div p:last-of-type {
+#sectionMenu > div > div > div > div > p {
   font-size: 17px;
   color: #8d8c8a;
-}
-#sectionMenu > div:first-of-type > div:nth-of-type(1) span::after {
-  width: 70%;
-}
-#sectionMenu > div:first-of-type > div:nth-of-type(2) span::after {
-  width: 73%;
-}
-#sectionMenu > div:first-of-type > div:nth-of-type(3) span::after {
-  width: 77%;
-}
-#sectionMenu > div:first-of-type > div:nth-of-type(4) span::after {
-  width: 66%;
-}
-#sectionMenu > div:first-of-type > div:nth-of-type(5) span::after {
-  width: 71%;
-}
-#sectionMenu > div:first-of-type > div:nth-of-type(6) span::after {
-  width: 68%;
-}
-#sectionMenu > div:first-of-type > div:nth-of-type(7) span::after {
-  width: 74%;
-}
-#sectionMenu > div:first-of-type > div:nth-of-type(8) span::after {
-  width: 71%;
-}
-#sectionMenu > div:first-of-type > div:nth-of-type(9) span::after {
-  width: 73%;
 }
 
 #sectionEvents {
@@ -23083,10 +23052,9 @@ header > div:last-of-type:hover:not(:checked) > div label i {
   animation: boutonHeader 333ms ease-in;
 }
 
-nav ul li:hover a {
+nav {
   color: #cda45d !important;
 }
-
 #sectionAbout div:last-of-type:hover {
   transform: scale(105%);
   transition: 500ms ease;
@@ -23139,22 +23107,22 @@ nav ul li:hover a {
 #sectionMenu input:checked + label {
   color: #cda45d;
 }
-#sectionMenu #Starters:checked ~ .salads, #sectionMenu #Starters:checked ~ .speciality {
+#sectionMenu #Starters:checked ~ div > .salads, #sectionMenu #Starters:checked ~ div > .speciality {
   display: none;
 }
-#sectionMenu #Starters:checked ~ .starters {
+#sectionMenu #Starters:checked ~ div > .starters {
   animation: menuAnimation 200ms;
 }
-#sectionMenu #Salads:checked ~ .starters, #sectionMenu #Salads:checked ~ .speciality {
+#sectionMenu #Salads:checked ~ div > .starters, #sectionMenu #Salads:checked ~ div > .speciality {
   display: none;
 }
-#sectionMenu #Salads:checked ~ .salads {
+#sectionMenu #Salads:checked ~ div > .salads {
   animation: menuAnimation 200ms;
 }
-#sectionMenu #Speciality:checked ~ .salads, #sectionMenu #Speciality:checked ~ .starters {
+#sectionMenu #Speciality:checked ~ div > .salads, #sectionMenu #Speciality:checked ~ div > .starters {
   display: none;
 }
-#sectionMenu #Speciality:checked ~ .speciality {
+#sectionMenu #Speciality:checked ~ div > .speciality {
   animation: menuAnimation 200ms;
 }
 
@@ -23229,14 +23197,8 @@ footer li a:hover {
   #sectionWhyUs > div div {
     width: 90vw;
   }
-  #sectionMenu > div:first-of-type > div {
+  #sectionMenu > div > div > div {
     width: 90vw;
-  }
-  #sectionMenu > div:first-of-type label:first-of-type {
-    margin-left: 15vw;
-  }
-  #sectionMenu > div:first-of-type label:last-of-type {
-    margin-right: 15vw;
   }
   #sectionEvents {
     padding-bottom: 10px;
@@ -23371,14 +23333,8 @@ footer li a:hover {
   #sectionWhyUs > div div {
     width: 90vw;
   }
-  #sectionMenu > div:first-of-type > div {
+  #sectionMenu > div > div > div {
     width: 90vw;
-  }
-  #sectionMenu > div:first-of-type label:first-of-type {
-    margin-left: 20vw;
-  }
-  #sectionMenu > div:first-of-type label:last-of-type {
-    margin-right: 20vw;
   }
   #sectionEvents {
     padding-bottom: 10px;
@@ -23468,12 +23424,6 @@ footer li a:hover {
   }
   #sectionWhyUs, #sectionEvents {
     padding-bottom: 10px;
-  }
-  #sectionMenu > div:first-of-type label:first-of-type {
-    margin-left: 25vw;
-  }
-  #sectionMenu > div:first-of-type label:last-of-type {
-    margin-right: 25vw;
   }
   #sectionContact > div > div > div {
     width: 45vw;

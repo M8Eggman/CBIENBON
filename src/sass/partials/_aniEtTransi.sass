@@ -77,8 +77,8 @@ header
             animation: boutonHeader 333ms ease-in
 nav
     ul li:hover a
-        color: $jauneRecurent !important
-#sectionAbout 
+    color: $jauneRecurent !important
+#sectionAbout
     div:last-of-type:hover
         transform: scale(105%)
         transition: 500ms ease
@@ -100,55 +100,55 @@ nav
             transition: 500ms ease
 #sectionWhyUs
     > div div:hover
-            background-color: $jauneRecurent
+        background-color: $jauneRecurent
+        transition: 250ms ease
+        p,h4
+            color: white
+            transform: translateY(-20px)
             transition: 250ms ease
-            p,h4
-                color: white 
-                transform: translateY(-20px)
-                transition: 250ms ease
     > div div
+        transition: 250ms ease
+        p,h4
             transition: 250ms ease
-            p,h4
-                transition: 250ms ease
 #sectionMenu
     transition: 200ms ease
     input:hover + label
-        color: $jauneRecurent 
+        color: $jauneRecurent
         transition: 200ms ease
     input:checked + label
         color: $jauneRecurent
-    #Starters:checked ~ .salads, #Starters:checked ~ .speciality
+    #Starters:checked ~ div > .salads, #Starters:checked ~ div > .speciality
         display: none
-    #Starters:checked ~ .starters
+    #Starters:checked ~ div > .starters
         animation: menuAnimation 200ms
-    #Salads:checked ~ .starters, #Salads:checked ~ .speciality
+    #Salads:checked ~ div > .starters, #Salads:checked ~ div > .speciality
         display: none
-    #Salads:checked ~ .salads
+    #Salads:checked ~ div > .salads
         animation: menuAnimation 200ms
-    #Speciality:checked ~ .salads, #Speciality:checked ~ .starters
+    #Speciality:checked ~ div > .salads, #Speciality:checked ~ div > .starters
         display: none
-    #Speciality:checked ~ .speciality
+    #Speciality:checked ~ div > .speciality
         animation: menuAnimation 200ms
-#sectionGallery 
+#sectionGallery
     > div div:hover img
         transform: scale(110%)
         transition: 200ms ease
     > div div img
         transition: 200ms ease
-#sectionChefs 
+#sectionChefs
     > div > div:hover > div
         display: flex !important
         p, i
             animation: chefs 200ms
-footer 
+footer
     #footerCopyright button:hover
-            background-color: $jauneRecurent
+        background-color: $jauneRecurent
+        transition: 200ms ease
+        i
+            color: white
             transition: 200ms ease
-            i
-                color: white
-                transition: 200ms ease
     li a
-        transition: 200ms ease
+            transition: 200ms ease
     li a:hover
-        color: $jauneRecurent !important
-        transition: 200ms ease
+            color: $jauneRecurent !important
+            transition: 200ms ease
